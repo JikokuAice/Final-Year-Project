@@ -4,8 +4,9 @@ namespace Backend.Application.Extensions;
 
 public static class ApplicationServices
 {
- //what is IserviceCollection //IDK MAN 
- static ApplicationServices()
+ //what is IServiceCollection
+ //IDK MAN 
+ public static void AddApplicationServices(IServiceCollection services)
  {
   
  }
