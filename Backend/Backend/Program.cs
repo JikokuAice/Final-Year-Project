@@ -1,4 +1,5 @@
 using Backend.Infrasturcture;
+using Backend.Infrasturcture.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +9,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddInfrasturctureServices();
+builder.Services.AddInfrastructure(builder.Configuration);
+
 
 var app = builder.Build();
 
@@ -22,17 +24,17 @@ if (app.Environment.IsDevelopment())
 
 if (app.Environment.IsProduction())
 {
-   //To Do 
    app.UseSwagger();
    app.UseSwaggerUI();
-   
 }
-
 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+
+
 
 app.Run();

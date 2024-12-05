@@ -4,7 +4,7 @@ namespace Backend.Application.Extensions;
 
 public static class ApplicationServices
 {
- //what is IserviceCollection
+ //what is IserviceCollection //IDK MAN 
  static ApplicationServices()
  {
   

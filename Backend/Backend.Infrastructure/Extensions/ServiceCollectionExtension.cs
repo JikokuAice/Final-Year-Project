@@ -8,7 +8,7 @@ public static  class ServiceCollectionExtension
    
    public static void  AddInfrastructure(this IServiceCollection services,IConfiguration configuration)
    {
-      
+      configuration["ConnectionStrings:DefaultConnection"] = configuration["ConnectionStrings:DefaultConnection"];
    }
 
 }
