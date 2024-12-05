@@ -31,3 +31,10 @@ C:\Users\Ayush\Music\Final-Year-Project\Backend\Backend\obj\Debug\net8.0\refint\
 C:\Users\Ayush\Music\Final-Year-Project\Backend\Backend\obj\Debug\net8.0\Backend.pdb
 C:\Users\Ayush\Music\Final-Year-Project\Backend\Backend\obj\Debug\net8.0\Backend.genruntimeconfig.cache
 C:\Users\Ayush\Music\Final-Year-Project\Backend\Backend\obj\Debug\net8.0\ref\Backend.dll
+C:\Users\Ayush\Music\Final-Year-Project\Backend\Backend\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Ayush\Music\Final-Year-Project\Backend\Backend\bin\Debug\net8.0\MediatR.dll
+C:\Users\Ayush\Music\Final-Year-Project\Backend\Backend\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\Ayush\Music\Final-Year-Project\Backend\Backend\bin\Debug\net8.0\Backend.Application.dll
+C:\Users\Ayush\Music\Final-Year-Project\Backend\Backend\bin\Debug\net8.0\Backend.Domain.dll
+C:\Users\Ayush\Music\Final-Year-Project\Backend\Backend\bin\Debug\net8.0\Backend.Application.pdb
+C:\Users\Ayush\Music\Final-Year-Project\Backend\Backend\bin\Debug\net8.0\Backend.Domain.pdb
