@@ -8,7 +8,7 @@ public class MapDetail
  [Key]
    public int Id { get; set; }
    [Required]
-   public string MapName { get; set; }
+   public string? MapName { get; set; }
    [Required]
    public double Latitude  { get; set; }
    [Required]
@@ -18,5 +18,5 @@ public class MapDetail
    public double Distance  { get; set; }
    public TimeOnly AverageTime { get; set; } 
    [Required]
-   public string polypoint { get; set; }
+   public string? Polypoints { get; set; }
 }

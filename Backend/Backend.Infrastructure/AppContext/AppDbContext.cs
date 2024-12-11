@@ -1,5 +1,6 @@
 using Backend.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Activity = System.Diagnostics.Activity;
 
 namespace Backend.Infrasturcture.AppContext;
@@ -9,20 +10,30 @@ namespace Backend.Infrasturcture.AppContext;
 internal class AppDbContext:DbContext
 {
    private readonly DbContextOptions<AppDbContext> _options;
-   public AppDbContext(DbContextOptions<AppDbContext> options):base(options)
+   private readonly IConfiguration _configuration;
+   public AppDbContext(DbContextOptions<AppDbContext> options,IConfiguration configuration):base(options)
    {
       _options = options;
+      _configuration = configuration;
    }
    
-//Acess only within Class or class that inherit it.
-//    protected override void OnModelCreating(ModelBuilder modelBuilder)
-//    {
-//       base.OnModelCreating(modelBuilder);
-//    }
-//    
-   
-// public DbSet<Test> Tests { get; set; }
-   
+   protected override void OnModelCreating(ModelBuilder modelBuilder)
+   {
+      var adminEmail = _configuration.GetSection("Backend_Admin_Email");
+      var adminPassword = _configuration.GetSection("Backend_Admin_Password");
+      var adminHashed = BCrypt.Net.BCrypt.EnhancedHashPassword(adminPassword.Value,13);
+      
+      User admin = new User()
+      {
+         Email = adminEmail.Value, Password = adminHashed, Name = "Admin", RoleId = 1, Image = "",Id = -1
+      };
+      
+      modelBuilder.Entity<User>(e => e.HasData(admin));
+   }
+
+   // public DbSet<Test> Tests { get; set; }
+   public DbSet<User> Users { get; set; }
+   public  DbSet<Role> Roles { get; set; }
    public DbSet<Feed> Feeds { get; set; }
    public DbSet<MapDetail> MapDetails { get; set; }
    public DbSet<Suggestion> Suggestions { get; set; }

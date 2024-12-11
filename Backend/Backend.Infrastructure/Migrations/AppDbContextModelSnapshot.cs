@@ -31,7 +31,6 @@ namespace Backend.Infrasturcture.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Comment")
-                        .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
@@ -73,7 +72,7 @@ namespace Backend.Infrasturcture.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("polypoint")
+                    b.Property<string>("Polypoints")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -110,6 +109,22 @@ namespace Backend.Infrasturcture.Migrations
                     b.ToTable("Reviews");
                 });
 
+            modelBuilder.Entity("Backend.Domain.Entity.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+                });
+
             modelBuilder.Entity("Backend.Domain.Entity.Suggestion", b =>
                 {
                     b.Property<int>("Id")
@@ -119,11 +134,9 @@ namespace Backend.Infrasturcture.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.PrimitiveCollection<string>("Clothing")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.PrimitiveCollection<string>("Gear")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Notes")
@@ -155,7 +168,6 @@ namespace Backend.Infrasturcture.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TrailType")
@@ -164,6 +176,55 @@ namespace Backend.Infrasturcture.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Trails");
+                });
+
+            modelBuilder.Entity("Backend.Domain.Entity.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("RefreshTokenExpiry")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("RoleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = -1,
+                            Email = "np05cp4a220031@iic.edu.np",
+                            Image = "",
+                            Name = "Admin",
+                            Password = "$2a$13$/7ZeBkFx2y6gw076NUlqAOPPwhN1rf54cuuVBZHNgVWtinIG8MjEq",
+                            RoleId = 1
+                        });
                 });
 
             modelBuilder.Entity("Backend.Domain.Entity.UserActivites", b =>
@@ -184,20 +245,31 @@ namespace Backend.Infrasturcture.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("Name")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Route")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TimeElapsed")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("route")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("UserActivity");
+                });
+
+            modelBuilder.Entity("Backend.Domain.Entity.User", b =>
+                {
+                    b.HasOne("Backend.Domain.Entity.Role", "Role")
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId");
+
+                    b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("Backend.Domain.Entity.Role", b =>
+                {
+                    b.Navigation("Users");
                 });
 #pragma warning restore 612, 618
         }

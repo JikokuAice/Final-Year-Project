@@ -1,13 +1,16 @@
 using Microsoft.Extensions.DependencyInjection;
+using MediatR;
 
 namespace Backend.Application.Extensions;
 
 public static class ApplicationServices
 {
- //what is IServiceCollection
- //IDK MAN 
- public static void AddApplicationServices(IServiceCollection services)
+ public static void AddApplicationServices(this IServiceCollection services)
  {
-  
+  var assembly = typeof(ApplicationServices).Assembly;
+  services.AddMediatR(config =>
+  {
+   config.RegisterServicesFromAssembly(assembly) ;}
+   );
  }
 }

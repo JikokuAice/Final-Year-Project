@@ -8,5 +8,5 @@ public class Review
   public string? Experience { get; set; }
   public string? Conditions { get; set; }
   public string? Suggestions { get; set; }
-  public List<string?>? Images { get; set; }
+  public List<string>? Images { get; set; }
 }

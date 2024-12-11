@@ -9,5 +9,8 @@ public class Feed
    public int Rating { get; set; }
    public int Likes { get; set; }
    [MaxLength(500)]
-   public string Comment { get; set; }
+   public string? Comment { get; set; }
+   
 }
+
+
