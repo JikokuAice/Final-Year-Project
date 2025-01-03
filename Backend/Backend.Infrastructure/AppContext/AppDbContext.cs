@@ -28,14 +28,16 @@ internal class AppDbContext:DbContext
          Email = adminEmail.Value, Password = adminHashed, Name = "Admin", RoleId = 1, Image = "",Id = -1
       };
       
-      modelBuilder.Entity<User>(e => e.HasData(admin));
+      modelBuilder.Entity<User>(e => e.HasData(admin)); 
+      modelBuilder.Entity<Trail>().HasOne(e=>e.Maps).WithOne().HasForeignKey<Trail>(e=>e.MapId);
+      
    }
 
    // public DbSet<Test> Tests { get; set; }
    public DbSet<User> Users { get; set; }
    public  DbSet<Role> Roles { get; set; }
    public DbSet<Feed> Feeds { get; set; }
-   public DbSet<MapDetail> MapDetails { get; set; }
+   public DbSet<Map> Maps { get; set; }
    public DbSet<Suggestion> Suggestions { get; set; }
    public DbSet<Trail> Trails { get; set; }
    public DbSet<Review> Reviews { get; set; }

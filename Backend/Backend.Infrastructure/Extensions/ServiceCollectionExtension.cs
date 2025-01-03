@@ -1,6 +1,7 @@
 using System.Text;
 using Backend.Domain.Repository;
 using Backend.Domain.Services;
+using Backend.Infrasturcture.AdminRepo;
 using Backend.Infrasturcture.AppContext;
 using Backend.Infrasturcture.AuthRepo;
 using Backend.Infrasturcture.Services;
@@ -22,8 +23,12 @@ public static  class ServiceCollectionExtension
      option.UseSqlServer(connectionString: key);
      option.ConfigureWarnings(w => w.Ignore(RelationalEventId.PendingModelChangesWarning));
   });
+  
+  
+  
      services.AddScoped<IAuthenticationRepoServices,AuthRepository>();
      services.AddScoped<IAuthServices,AuthServices>();
+ 
      services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(option =>
      {
         var secretKey = configuration.GetSection("Backend_Secret_Key").Value;
@@ -42,6 +47,8 @@ public static  class ServiceCollectionExtension
         };
 
      });
+     
+     services.AddScoped<IAdminRepoServices, AdminRepository>();
 
    }
 }

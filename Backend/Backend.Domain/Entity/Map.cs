@@ -3,20 +3,15 @@ using System.Runtime.InteropServices.JavaScript;
 
 namespace Backend.Domain.Entity;
 
-public class MapDetail
+public class Map
 {
  [Key]
    public int Id { get; set; }
-   [Required]
    public string? MapName { get; set; }
-   [Required]
-   public double Latitude  { get; set; }
-   [Required]
-   public double Longitude  { get; set; }
+   public double? Latitude  { get; set; }
+   public double? Longitude  { get; set; }
    public double? Altitude  { get; set; }
-   [Required]
    public double Distance  { get; set; }
-   public TimeOnly AverageTime { get; set; } 
-   [Required]
+   public string? AverageTime { get; set; } 
    public string? Polypoints { get; set; }
 }

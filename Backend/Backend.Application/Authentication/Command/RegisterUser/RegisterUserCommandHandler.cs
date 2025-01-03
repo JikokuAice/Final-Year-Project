@@ -11,7 +11,7 @@ public class RegisterUserCommandHandler:IRequestHandler<RegisterUserCommand,bool
       _authenticationRepoServices = authenticationRepoServices;
    }
    public async Task<bool> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
-   {
+   { 
       var user = RegisterUserCommand.ConvertToUserFromRegisterUserCommand(request);
       var result = await _authenticationRepoServices.RegisterUser(user);
       return result;

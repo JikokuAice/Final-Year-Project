@@ -19,7 +19,7 @@ public class RegisterUserCommand:IRequest<bool>
    
 
    public static User ConvertToUserFromRegisterUserCommand(RegisterUserCommand registerUserCommand)
-   {
+   {  
       return new User()
       {
 Email = registerUserCommand.Email,
@@ -29,5 +29,6 @@ RoleId = 2,
 Image = registerUserCommand.Image
       }; 
    }
+   
    
 }

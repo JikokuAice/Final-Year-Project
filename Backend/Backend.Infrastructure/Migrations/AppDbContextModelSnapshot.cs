@@ -45,7 +45,7 @@ namespace Backend.Infrasturcture.Migrations
                     b.ToTable("Feeds");
                 });
 
-            modelBuilder.Entity("Backend.Domain.Entity.MapDetail", b =>
+            modelBuilder.Entity("Backend.Domain.Entity.Map", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -56,29 +56,27 @@ namespace Backend.Infrasturcture.Migrations
                     b.Property<double?>("Altitude")
                         .HasColumnType("float");
 
-                    b.Property<TimeOnly>("AverageTime")
-                        .HasColumnType("time");
+                    b.Property<string>("AverageTime")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Distance")
                         .HasColumnType("float");
 
-                    b.Property<double>("Latitude")
+                    b.Property<double?>("Latitude")
                         .HasColumnType("float");
 
-                    b.Property<double>("Longitude")
+                    b.Property<double?>("Longitude")
                         .HasColumnType("float");
 
                     b.Property<string>("MapName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Polypoints")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("MapDetails");
+                    b.ToTable("Maps");
                 });
 
             modelBuilder.Entity("Backend.Domain.Entity.Review", b =>
@@ -167,6 +165,9 @@ namespace Backend.Infrasturcture.Migrations
                     b.Property<int?>("Length")
                         .HasColumnType("int");
 
+                    b.Property<int?>("MapId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -174,6 +175,10 @@ namespace Backend.Infrasturcture.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MapId")
+                        .IsUnique()
+                        .HasFilter("[MapId] IS NOT NULL");
 
                     b.ToTable("Trails");
                 });
@@ -222,7 +227,7 @@ namespace Backend.Infrasturcture.Migrations
                             Email = "np05cp4a220031@iic.edu.np",
                             Image = "",
                             Name = "Admin",
-                            Password = "$2a$13$/7ZeBkFx2y6gw076NUlqAOPPwhN1rf54cuuVBZHNgVWtinIG8MjEq",
+                            Password = "$2a$13$r7KCrtp1urxL.LAp6fameOrtQmy6pNREhqBJ99Oi5kRRMcyjpgapS",
                             RoleId = 1
                         });
                 });
@@ -256,6 +261,15 @@ namespace Backend.Infrasturcture.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("UserActivity");
+                });
+
+            modelBuilder.Entity("Backend.Domain.Entity.Trail", b =>
+                {
+                    b.HasOne("Backend.Domain.Entity.Map", "Maps")
+                        .WithOne()
+                        .HasForeignKey("Backend.Domain.Entity.Trail", "MapId");
+
+                    b.Navigation("Maps");
                 });
 
             modelBuilder.Entity("Backend.Domain.Entity.User", b =>
