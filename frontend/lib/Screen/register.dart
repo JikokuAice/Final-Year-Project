@@ -1,8 +1,7 @@
-import "package:flutter/cupertino.dart";
 import "package:flutter/gestures.dart";
 import "package:flutter/material.dart";
-import "package:flutter/widgets.dart";
 import "package:frontend/Screen/Login.dart";
+import "package:gap/gap.dart";
 
 class RegistrationPage extends StatefulWidget {
   const RegistrationPage({super.key});
@@ -12,6 +11,7 @@ class RegistrationPage extends StatefulWidget {
 }
 
 class _RegistrationPageState extends State<RegistrationPage> {
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,47 +22,53 @@ class _RegistrationPageState extends State<RegistrationPage> {
           const Center(
             child: Image(image: AssetImage("assets/Logo.png"), height: 150),
           ),
-          const Spacer(),
-          const TextField(
-            decoration: InputDecoration(
-              label: Text("Name"),
-              hintText: "Full Name",
-              border: OutlineInputBorder(
-                borderSide: BorderSide(
-                  color: Color.fromARGB(255, 194, 194, 194),
-                  width: 1,
+          Form(
+            key: _formKey,
+            child: Column(
+              children: [
+                const TextField(
+                  decoration: InputDecoration(
+                    label: Text("Name"),
+                    hintText: "Full Name",
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color.fromARGB(255, 194, 194, 194),
+                        width: 1,
+                      ),
+                    ),
+                  ),
                 ),
-              ),
+                Gap(20),
+                const TextField(
+                  decoration: InputDecoration(
+                    label: Text("Email"),
+                    hintText: "aice**@gmail.com",
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color.fromARGB(255, 194, 194, 194),
+                        width: 1,
+                      ),
+                    ),
+                  ),
+                ),
+                Gap(20),
+                const TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    label: Text("Password"),
+                    hintText: "**********",
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color.fromARGB(255, 194, 194, 194),
+                        width: 1,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
           Spacer(),
-          const TextField(
-            decoration: InputDecoration(
-              label: Text("Email"),
-              hintText: "aice**@gmail.com",
-              border: OutlineInputBorder(
-                borderSide: BorderSide(
-                  color: Color.fromARGB(255, 194, 194, 194),
-                  width: 1,
-                ),
-              ),
-            ),
-          ),
-          const Spacer(),
-          const TextField(
-            obscureText: true,
-            decoration: InputDecoration(
-              label: Text("Password"),
-              hintText: "**********",
-              border: OutlineInputBorder(
-                borderSide: BorderSide(
-                  color: Color.fromARGB(255, 194, 194, 194),
-                  width: 1,
-                ),
-              ),
-            ),
-          ),
-          const Spacer(),
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -88,7 +94,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
               )
             ],
           ),
-          const Spacer(),
+          Gap(10),
           TextButton(
             onPressed: () => {},
             style: ButtonStyle(
@@ -107,7 +113,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
               style: TextStyle(color: Colors.white, fontSize: 20),
             ),
           ),
-          const Spacer(),
+          const Gap(10),
           RichText(
             text: TextSpan(
               style: const TextStyle(fontSize: 18),
