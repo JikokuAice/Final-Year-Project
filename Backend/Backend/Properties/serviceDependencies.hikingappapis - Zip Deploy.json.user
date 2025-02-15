@@ -1,0 +1,25 @@
+{
+  "dependencies": {},
+  "parameters": {
+    "hikingappapis.resourceGroupName": {
+      "Name": "hikingappapis.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "KEY"
+    },
+    "hikingappapis.resourceGroupLocation": {
+      "Name": "hikingappapis.resourceGroupLocation",
+      "Type": null,
+      "Value": "eastasia"
+    },
+    "hikingappapis.resourceName": {
+      "Name": "hikingappapis.resourceName",
+      "Type": null,
+      "Value": "hikingappapis"
+    },
+    "hikingappapis.subscriptionId": {
+      "Name": "hikingappapis.subscriptionId",
+      "Type": "subscription",
+      "Value": "c9485c00-97cd-4a6b-8034-656342a809bd"
+    }
+  }
+}
