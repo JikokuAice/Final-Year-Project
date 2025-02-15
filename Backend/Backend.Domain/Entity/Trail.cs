@@ -11,6 +11,8 @@ public class Trail
    public string? Description { get; set; }
    public string? TrailType { get; set; }
    public int? Length { get; set; }
+   public int? Rating { get; set; }
+   public string? Difficulty { get; set; }
    public int? Elevation { get; set; }
 
    public int? MapId;

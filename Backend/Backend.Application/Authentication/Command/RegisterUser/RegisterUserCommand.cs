@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-using Backend.Domain.Entity;
+
 using MediatR;
 
 namespace Backend.Application.Authentication.Command.RegisterUser;
@@ -18,9 +18,9 @@ public class RegisterUserCommand:IRequest<bool>
    
    
 
-   public static User ConvertToUserFromRegisterUserCommand(RegisterUserCommand registerUserCommand)
+   public static Domain.Entity.User ConvertToUserFromRegisterUserCommand(RegisterUserCommand registerUserCommand)
    {  
-      return new User()
+      return new Domain.Entity.User()
       {
 Email = registerUserCommand.Email,
 Password = registerUserCommand.Password,

@@ -5,6 +5,7 @@ using Backend.Infrasturcture.AdminRepo;
 using Backend.Infrasturcture.AppContext;
 using Backend.Infrasturcture.AuthRepo;
 using Backend.Infrasturcture.Services;
+using Backend.Infrasturcture.UserRepo;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
@@ -49,6 +50,7 @@ public static  class ServiceCollectionExtension
      });
      
      services.AddScoped<IAdminRepoServices, AdminRepository>();
+     services.AddScoped<IUserRepoService, UserRepository>();
 
    }
 }

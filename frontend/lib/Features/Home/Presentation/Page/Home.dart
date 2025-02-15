@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:frontend/Features/Home/Presentation/Bloc/home_bloc.dart';
 import 'package:frontend/Features/Home/Presentation/Widget/Card.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:toastification/toastification.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -181,8 +182,14 @@ class _HomeState extends State<Home> {
                             ),
                           ),
                           onPressed: () {
-                            Navigator.pushReplacementNamed(
-                                context, "onboarding_screen");
+                            context.read<HomeBloc>().add(GetAllTrailsEvent());
+                            toastification.show(
+                              context: context,
+                              type: ToastificationType.info,
+                              title: const Text('Please Try Again Later.'),
+                              style: ToastificationStyle.minimal,
+                              autoCloseDuration: const Duration(seconds: 5),
+                            );
                           },
                           child: const Text(
                             "Try Again",

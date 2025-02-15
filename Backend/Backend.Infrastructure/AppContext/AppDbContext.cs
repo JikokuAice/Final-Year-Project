@@ -7,7 +7,7 @@ namespace Backend.Infrasturcture.AppContext;
 
 
 //internal means only ascessable within Backend.Infrasturcture Assembly.
-internal class AppDbContext:DbContext
+public class AppDbContext:DbContext
 {
    private readonly DbContextOptions<AppDbContext> _options;
    private readonly IConfiguration _configuration;

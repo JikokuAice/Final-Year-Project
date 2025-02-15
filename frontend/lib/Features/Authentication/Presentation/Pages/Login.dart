@@ -122,8 +122,6 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     )
                   }
-                else
-                  {log.e("okay dham")}
               },
               style: ButtonStyle(
                 backgroundColor: const WidgetStatePropertyAll(
