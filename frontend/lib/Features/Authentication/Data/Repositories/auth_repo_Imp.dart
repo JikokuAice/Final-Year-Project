@@ -30,7 +30,9 @@ class AuthRepoImp extends AuthRepo {
     }
 
     final authToken = AuthToken(
-        acessToken: tokenModel.acessToken, refreshToken: tokenModel.acessToken);
+        acessToken: tokenModel.acessToken,
+        refreshToken: tokenModel.acessToken,
+        role: tokenModel.role);
     return authToken;
   }
 }

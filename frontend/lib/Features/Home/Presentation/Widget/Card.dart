@@ -1,9 +1,10 @@
 import "package:flutter/material.dart";
+import "package:frontend/Features/Home/Domain/Entity/Hiking_Card_Item.dart";
 import "package:gap/gap.dart";
 
 class TrailCard extends StatefulWidget {
-  const TrailCard({super.key});
-
+  const TrailCard({super.key, required this.data});
+  final HikingCardItem data;
   @override
   State<TrailCard> createState() => _TrailCardState();
 }
@@ -27,30 +28,30 @@ class _TrailCardState extends State<TrailCard> {
             ),
           ),
           const Gap(5),
-          const Text(
-            "Heading Trail Name dfdf",
+          Text(
+            widget.data.name ?? "Empty",
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
           ),
           const Text(
-            "Manaslu Himalya, Nepal",
+            "Manaslu circuit",
             style: TextStyle(),
           ),
-          const Row(
+          Row(
             children: [
-              Icon(Icons.star),
+              const Icon(Icons.star),
               Text(
-                "4.5" ". ",
+                '${widget.data.rating}' ". ",
+                style: const TextStyle(fontWeight: FontWeight.w500),
+              ),
+              Text(
+                '${widget.data.difficulty}' ". ",
                 style: TextStyle(fontWeight: FontWeight.w500),
               ),
               Text(
-                "Easy" ". ",
-                style: TextStyle(fontWeight: FontWeight.w500),
-              ),
-              Text(
-                "4.5" "KM",
-                style: TextStyle(fontWeight: FontWeight.w500),
+                '${widget.data.length}' " KM",
+                style: const TextStyle(fontWeight: FontWeight.w500),
               ),
             ],
           )

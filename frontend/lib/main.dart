@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:frontend/App/Router/app_router.dart';
 import 'package:frontend/Features/Authentication/Presentation/Bloc/auth_bloc.dart';
+import 'package:frontend/Features/Home/Presentation/Bloc/home_bloc.dart';
+import 'package:frontend/Features/Home/Presentation/Page/Home.dart';
 import 'App/Dependency_Injection/dependency_injection.dart' as di;
 
 void main() {
@@ -15,7 +17,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [BlocProvider(create: (context) => di.sl<AuthBloc>())],
+      providers: [
+        BlocProvider(create: (context) => di.sl<AuthBloc>()),
+        BlocProvider(
+          create: (context) => di.sl<HomeBloc>(),
+          child: const Home(),
+        )
+      ],
       child: MaterialApp(
         title: 'Flutter Demo',
         navigatorKey: AppRouter.navigatorKey,

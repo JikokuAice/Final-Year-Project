@@ -6,6 +6,11 @@ import 'package:frontend/Features/Authentication/Domain/Repository/auth_repo.dar
 import 'package:frontend/Features/Authentication/Domain/UseCase/login_usecase.dart';
 import 'package:frontend/Features/Authentication/Domain/UseCase/register_usecase.dart';
 import 'package:frontend/Features/Authentication/Presentation/Bloc/auth_bloc.dart';
+import 'package:frontend/Features/Home/Data/Data_Source/remote_data_source.dart';
+import 'package:frontend/Features/Home/Data/Repositories/home_repo_imp.dart';
+import 'package:frontend/Features/Home/Domain/Repository/home_repo.dart';
+import 'package:frontend/Features/Home/Domain/Usecase/get_hiking_item_usecase.dart';
+import 'package:frontend/Features/Home/Presentation/Bloc/home_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:logger/logger.dart';
 
@@ -23,14 +28,20 @@ void init() {
 //Data source Config
   sl.registerLazySingleton<AuthRemoteDataSource>(
       () => AuthRemoteDataSourceImp(sl<Dio>(), sl<Logger>()));
+  sl.registerLazySingleton<RemoteDataSource>(
+      () => RemoteDataSourceImp(sl<Dio>(), sl<Logger>()));
 
 //Repositories
   sl.registerLazySingleton<AuthRepo>(
       () => AuthRepoImp(authRemoteDataSource: sl<AuthRemoteDataSource>()));
+  sl.registerLazySingleton<HomeRepo>(
+      () => HomeRepoImp(remoteDataSource: sl<RemoteDataSource>()));
 
 //Usecases
   sl.registerLazySingleton(() => RegisterUsecase(authRepo: sl<AuthRepo>()));
   sl.registerLazySingleton(() => LoginUsecase(authRepo: sl<AuthRepo>()));
+  sl.registerLazySingleton(
+      () => GetHikingItemUsecase(homeRepo: sl<HomeRepo>()));
 
 //bloc
   sl.registerFactory(
@@ -39,4 +50,7 @@ void init() {
       loginUsecase: sl<LoginUsecase>(),
     ),
   );
+
+  sl.registerFactory(
+      () => HomeBloc(getHikingItemUsecase: sl<GetHikingItemUsecase>()));
 }

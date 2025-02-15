@@ -13,6 +13,8 @@ class LoginUsecase {
     var response = await authRepo.loginUser(login);
     prefs.setString("acessToken", response!.acessToken);
     prefs.setString("refreshToken", response.refreshToken);
+    prefs.setString("role", response.role);
+
     return response;
   }
 }

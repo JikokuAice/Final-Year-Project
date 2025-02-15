@@ -19,8 +19,8 @@ class AuthRemoteDataSourceImp extends AuthRemoteDataSource {
   Future<bool> registerUser(RegisterModel register) async {
     Response response;
     try {
-      response =
-          await dio.post("$localHostUrl/Register", data: register.tojson());
+      response = await dio.post("$localHostUrl$registerRoute",
+          data: register.tojson());
       log.d(response.headers);
       if (response.statusCode == 400 || response.statusCode == 401) {
         return false;
@@ -37,7 +37,8 @@ class AuthRemoteDataSourceImp extends AuthRemoteDataSource {
   Future<TokenModel?> loginUser(LoginModel login) async {
     Response response;
     try {
-      response = await dio.post("$localHostUrl/Login", data: login.tojson());
+      response =
+          await dio.post("$localHostUrl$loginRoute", data: login.tojson());
       log.d(response.data);
       Map<String, dynamic> jsonResponse = response.data;
       log.e(jsonResponse);

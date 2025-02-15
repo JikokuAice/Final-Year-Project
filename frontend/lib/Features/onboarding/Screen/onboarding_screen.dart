@@ -1,9 +1,5 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:frontend/Core/Network/dio_client.dart';
 import 'package:gap/gap.dart';
-import 'package:logger/logger.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -14,21 +10,8 @@ class OnboardingScreen extends StatefulWidget {
 }
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
-  final dio = createDio(baseUrl: "https://192.168.100.7:5001");
-
-  Future<void> tryApiCall() async {
-    try {
-      debugPrint("API Call Started...");
-      var response = await dio.get("/Admin/Test");
-      debugPrint("Response: ${response.data}");
-    } catch (e) {
-      debugPrint("API Call Failed: $e");
-    }
-  }
-
   @override
   void initState() {
-    tryApiCall();
     onBoardingCompleted();
     navigateToApplication();
     super.initState();
