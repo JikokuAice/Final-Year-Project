@@ -14,7 +14,6 @@ class LoginUsecase {
     prefs.setString("acessToken", response!.acessToken);
     prefs.setString("refreshToken", response.refreshToken);
     prefs.setString("role", response.role);
-
     return response;
   }
 }

@@ -15,8 +15,8 @@ class RemoteDataSourceImp extends RemoteDataSource {
   @override
   Future<List<HikingCardModel>?> getHomePageDetails() async {
     var result = await dio
-        .get("https://192.168.100.7:5001/api/User/GetAllTrial")
-        .timeout(const Duration(seconds: 2));
+        .get("https://192.168.42.103:5001/api/User/GetAllTrial")
+        .timeout(const Duration(seconds: 5));
     log.e(result.data);
     log.e(result);
     List<dynamic> jsonList = result.data; // Raw list from API

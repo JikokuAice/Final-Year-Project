@@ -1,4 +1,5 @@
 class HikingCardModel {
+  int id;
   String? name;
   List<dynamic>? images;
   int? length;
@@ -6,10 +7,16 @@ class HikingCardModel {
   String? difficulty;
 
   HikingCardModel(
-      {this.name, this.difficulty, this.images, this.length, this.rating});
+      {required this.id,
+      this.name,
+      this.difficulty,
+      this.images,
+      this.length,
+      this.rating});
 
   factory HikingCardModel.fromJson(Map<String, dynamic> json) {
     return HikingCardModel(
+        id: json['id'],
         name: json['name'],
         images: json['images'],
         length: json['length'],

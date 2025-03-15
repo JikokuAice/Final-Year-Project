@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:frontend/App/Router/app_router.dart';
+import 'package:frontend/Features/Admin/presentation/Bloc/admin_bloc.dart';
+import 'package:frontend/Features/Admin/presentation/Screen/add_map.dart';
 import 'package:frontend/Features/Authentication/Presentation/Bloc/auth_bloc.dart';
 import 'package:frontend/Features/Home/Presentation/Bloc/home_bloc.dart';
 import 'package:frontend/Features/Home/Presentation/Page/Home.dart';
 import 'App/Dependency_Injection/dependency_injection.dart' as di;
 
-void main() {
+void main() async {
   di.init();
   runApp(const MyApp());
 }
@@ -22,7 +24,11 @@ class MyApp extends StatelessWidget {
         BlocProvider(
           create: (context) => di.sl<HomeBloc>(),
           child: const Home(),
-        )
+        ),
+        BlocProvider(
+          create: (context) => di.sl<AdminBloc>(),
+          child: const AddMap(),
+        ),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',

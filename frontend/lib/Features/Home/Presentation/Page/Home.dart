@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:frontend/Features/Home/Presentation/Bloc/home_bloc.dart';
 import 'package:frontend/Features/Home/Presentation/Widget/Card.dart';
+import 'package:gap/gap.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:toastification/toastification.dart';
 
@@ -18,6 +19,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
+    homeBloc = context.read<HomeBloc>();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       context.read<HomeBloc>().add(GetAllTrailsEvent());
     });
@@ -41,7 +43,9 @@ class _HomeState extends State<Home> {
 
           if (snapshot.hasError) {
             return const Scaffold(
-              body: Center(child: Text('Error fetching role')),
+              body: Center(
+                child: Text('Error fetching role'),
+              ),
             );
           }
 
@@ -147,8 +151,41 @@ class _HomeState extends State<Home> {
             body: BlocBuilder<HomeBloc, HomeState>(
               builder: (context, state) {
                 if (state is GetAllTrailEmpty) {
-                  return const Center(
-                    child: Text("No Trials Exist to be fetched"),
+                  return Center(
+                    child: Column(
+                      children: [
+                        const Image(
+                          image: AssetImage("assets/No_Data.png"),
+                          height: 350,
+                          width: 350,
+                        ),
+                        const Gap(10),
+                        const Text("No Trials Data to fetch"),
+                        const Gap(10),
+                        ElevatedButton(
+                          style: const ButtonStyle(
+                            backgroundColor: WidgetStatePropertyAll(
+                              Color(0xFF008080),
+                            ),
+                          ),
+                          onPressed: () {
+                            toastification.show(
+                              context: context,
+                              type: ToastificationType.info,
+                              title: const Text(
+                                  'Please Wait We Are Fetching Data 🌐🗄️.'),
+                              style: ToastificationStyle.minimal,
+                              autoCloseDuration: const Duration(seconds: 5),
+                            );
+                            context.read<HomeBloc>().add(GetAllTrailsEvent());
+                          },
+                          child: const Text(
+                            "Try Again",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                      ],
+                    ),
                   );
                 }
                 if (state is GetAllTrialSucess) {
@@ -161,6 +198,7 @@ class _HomeState extends State<Home> {
                         return Padding(
                           padding: const EdgeInsets.all(5),
                           child: TrailCard(
+                            homeBloc: homeBloc,
                             data: state.fetchedData[index],
                           ),
                         );
@@ -178,18 +216,19 @@ class _HomeState extends State<Home> {
                         ElevatedButton(
                           style: const ButtonStyle(
                             backgroundColor: WidgetStatePropertyAll(
-                              Color(0xFF008080),
+                              Color.fromRGBO(0, 128, 128, 1),
                             ),
                           ),
                           onPressed: () {
-                            context.read<HomeBloc>().add(GetAllTrailsEvent());
                             toastification.show(
                               context: context,
                               type: ToastificationType.info,
-                              title: const Text('Please Try Again Later.'),
+                              title: const Text(
+                                  'Please Wait We Are Fetching Data 🌐🗄️.'),
                               style: ToastificationStyle.minimal,
                               autoCloseDuration: const Duration(seconds: 5),
                             );
+                            context.read<HomeBloc>().add(GetAllTrailsEvent());
                           },
                           child: const Text(
                             "Try Again",

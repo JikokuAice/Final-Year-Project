@@ -1,4 +1,5 @@
 class HikingCardItem {
+  int id;
   String? name;
   List<dynamic>? images;
   int? length;
@@ -6,5 +7,10 @@ class HikingCardItem {
   String? difficulty;
 
   HikingCardItem(
-      {this.name, this.images, this.difficulty, this.length, this.rating});
+      {required this.id,
+      this.name,
+      this.images,
+      this.difficulty,
+      this.length,
+      this.rating});
 }

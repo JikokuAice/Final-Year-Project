@@ -1,5 +1,3 @@
-import 'package:flutter/foundation.dart';
-
 class TokenModel {
   String
       acessToken; // has short expirary and used for authorization and authentication.

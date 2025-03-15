@@ -37,8 +37,9 @@ class AuthRemoteDataSourceImp extends AuthRemoteDataSource {
   Future<TokenModel?> loginUser(LoginModel login) async {
     Response response;
     try {
-      response =
-          await dio.post("$localHostUrl$loginRoute", data: login.tojson());
+      log.e(login);
+      response = await dio.post("https://192.168.42.103:5001/Login",
+          data: login.tojson());
       log.d(response.data);
       Map<String, dynamic> jsonResponse = response.data;
       log.e(jsonResponse);

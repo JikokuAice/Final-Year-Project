@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/Features/Admin/presentation/Screen/Update_trial.dart';
 import 'package:frontend/Features/Admin/presentation/Screen/add_map.dart';
 import 'package:frontend/Features/Admin/presentation/Screen/create_trail.dart';
 import 'package:frontend/Features/Authentication/Presentation/Pages/Login.dart';

@@ -12,6 +12,8 @@ class HomeInitial extends HomeState {}
 class GetAllTrialSucess extends HomeState {
   final List<HikingCardItem> fetchedData;
   const GetAllTrialSucess({required this.fetchedData});
+  @override
+  List<Object> get props => [fetchedData];
 }
 
 class GetAllTrailEmpty extends HomeState {}

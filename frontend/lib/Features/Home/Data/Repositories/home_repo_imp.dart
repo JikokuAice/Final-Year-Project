@@ -11,6 +11,7 @@ class HomeRepoImp implements HomeRepo {
     var result = await remoteDataSource.getHomePageDetails();
     var convertedResult = result
         ?.map((e) => HikingCardItem(
+            id: e.id,
             name: e.name,
             length: e.length,
             rating: e.rating,
