@@ -83,7 +83,7 @@ class GetTrialWithMapModel {
         mapName: json["maps"]["mapName"] as String?,
         destinationLatlang: json["maps"]["destinationLatlang"] as String?,
         startLatlang: json["maps"]["startLatlang"] as String?,
-        altitude: json["maps"]["altitude"] as double?,
+        altitude: double.parse(json["maps"]["altitude"].toString()) as double?,
         distance: json["maps"]["distance"] as double?,
         averageTime: json["maps"]["averageTime"] as String?,
         polypoints: json["maps"]["polypoints"] as String?);

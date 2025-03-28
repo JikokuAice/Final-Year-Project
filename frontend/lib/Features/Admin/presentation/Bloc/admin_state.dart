@@ -40,8 +40,9 @@ class DeleteTrailWithMapFailure extends AdminState {
 
 // ignore: must_be_immutable
 class GetSepecificTrailSuccess extends AdminState {
+  
   GetTrialWithMapEntity? entity = GetTrialWithMapEntity();
-  GetSepecificTrailSuccess({required this.entity});
+  GetSepecificTrailSuccess({this.entity});
 }
 
 class GetSepecificTrailFailure extends AdminState {

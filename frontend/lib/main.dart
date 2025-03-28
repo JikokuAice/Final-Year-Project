@@ -6,6 +6,7 @@ import 'package:frontend/Features/Admin/presentation/Screen/add_map.dart';
 import 'package:frontend/Features/Authentication/Presentation/Bloc/auth_bloc.dart';
 import 'package:frontend/Features/Home/Presentation/Bloc/home_bloc.dart';
 import 'package:frontend/Features/Home/Presentation/Page/Home.dart';
+import 'package:frontend/Features/Travel_Route/Presentation/bloc/navigation_bloc.dart';
 import 'App/Dependency_Injection/dependency_injection.dart' as di;
 
 void main() async {
@@ -29,6 +30,9 @@ class MyApp extends StatelessWidget {
           create: (context) => di.sl<AdminBloc>(),
           child: const AddMap(),
         ),
+        BlocProvider(
+          create: (context) => di.sl<NavigationBloc>(),
+        )
       ],
       child: MaterialApp(
         title: 'Flutter Demo',

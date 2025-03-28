@@ -38,12 +38,13 @@ class AuthRemoteDataSourceImp extends AuthRemoteDataSource {
     Response response;
     try {
       log.e(login);
-      response = await dio.post("https://192.168.42.103:5001/Login",
-          data: login.tojson());
+      response = await dio.post("$localHostUrl/Login", data: login.tojson());
       log.d(response.data);
       Map<String, dynamic> jsonResponse = response.data;
       log.e(jsonResponse);
+      log.i("heppening kya");
       var tokenModel = TokenModel.fromJson(jsonResponse);
+
       return tokenModel;
     } catch (e) {
       log.e(e.toString());

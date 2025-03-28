@@ -11,6 +11,7 @@ import 'package:gap/gap.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:logger/logger.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:toastification/toastification.dart';
 
 class UpdateTrial extends StatefulWidget {
   const UpdateTrial({super.key, required this.id});
@@ -288,6 +289,18 @@ class _UpdateTrialState extends State<UpdateTrial> {
                                 mapAverageTime: enitty?.averageTime,
                                 mapPolypoints: enitty?.polypoints),
                           ),
+                        ),
+                        toastification.show(
+                          context: context,
+                          type: ToastificationType.error,
+                          title: const Text('Update Sucessfull'),
+                          style: ToastificationStyle.minimal,
+                          autoCloseDuration: const Duration(seconds: 5),
+                        ),
+                        Navigator.pushNamedAndRemoveUntil(
+                          context,
+                          "",
+                          (Route<dynamic> route) => false,
                         )
                       },
                       style: ButtonStyle(
@@ -363,7 +376,7 @@ class _UpdateTrialState extends State<UpdateTrial> {
       return;
     }
     setState(() {
-      _images.addAll(images.map((e) => e.path));
+      _images.addAll(images.map((e) => e.path).toList());
     });
   }
 

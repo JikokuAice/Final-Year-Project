@@ -80,7 +80,7 @@ class AdminBloc extends Bloc<AdminEvent, AdminState> {
     on<UpdateTrailWithMapEvent>((event, emit) async {
       try {
         var result = await updateTrailWithMapUsecase.call(event.entity!);
-        return emit(
+        emit(
           UpdateTrailWithMapSuccess(
             msg: result.toString(),
           ),

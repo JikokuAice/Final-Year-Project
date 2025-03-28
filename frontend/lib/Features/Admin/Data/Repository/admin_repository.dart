@@ -25,6 +25,7 @@ class AdminRepository extends AdminRepo {
         averageTime: trailAndMap.averageTime,
         polypoints: trailAndMap.polypoints,
         difficulty: trailAndMap.diffculty,
+      mapName: trailAndMap.mapName,
         location: trailAndMap.location);
     var result = await adminDataSource.createTrailWithMap(model);
     return result;

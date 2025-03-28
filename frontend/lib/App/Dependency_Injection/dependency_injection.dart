@@ -20,6 +20,12 @@ import 'package:frontend/Features/Home/Data/Repositories/home_repo_imp.dart';
 import 'package:frontend/Features/Home/Domain/Repository/home_repo.dart';
 import 'package:frontend/Features/Home/Domain/Usecase/get_hiking_item_usecase.dart';
 import 'package:frontend/Features/Home/Presentation/Bloc/home_bloc.dart';
+import 'package:frontend/Features/Travel_Route/Data/Data_Source/travel_data_source_imp.dart';
+import 'package:frontend/Features/Travel_Route/Data/Repository/Travel_Repository_Imp.dart';
+import 'package:frontend/Features/Travel_Route/Domain/Repo/Travel_Repo.dart';
+import 'package:frontend/Features/Travel_Route/Domain/Use_Case/Add_User_Activity_UseCase.dart';
+import 'package:frontend/Features/Travel_Route/Domain/Use_Case/Fetch_Map_Usecase.dart';
+import 'package:frontend/Features/Travel_Route/Presentation/bloc/navigation_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:logger/logger.dart';
 
@@ -27,7 +33,7 @@ final sl = GetIt.instance;
 
 void init() {
 //dio config
-  var dio = createDio(baseUrl: "https://192.168.100.7:5001");
+  var dio = createDio(baseUrl: "https://f55d-103-166-101-79.ngrok-free.app");
   sl.registerLazySingleton<Dio>(() => dio);
 
 //Logger Config
@@ -41,6 +47,8 @@ void init() {
       () => RemoteDataSourceImp(sl<Dio>(), sl<Logger>()));
   sl.registerLazySingleton<AdminDataSource>(
       () => AdminDataSourceImp(sl<Dio>(), sl<Logger>()));
+  sl.registerLazySingleton<TravelDataSource>(
+      () => TravelDataSourceImp(sl<Dio>(), sl<Logger>()));
 
 //Repositories
   sl.registerLazySingleton<AuthRepo>(
@@ -50,6 +58,9 @@ void init() {
 
   sl.registerLazySingleton<AdminRepo>(
       () => AdminRepository(adminDataSource: sl<AdminDataSource>()));
+
+  sl.registerLazySingleton<TravelRepo>(
+      () => TravelRepositoryImp(dataSource: sl<TravelDataSource>()));
 
 //Usecases
   sl.registerLazySingleton(() => RegisterUsecase(authRepo: sl<AuthRepo>()));
@@ -68,6 +79,9 @@ void init() {
       () => GetSepecificTrailUsecase(adminRepo: sl<AdminRepo>()));
   sl.registerLazySingleton(
       () => UpdateTrailWithMapUsecase(adminRepo: sl<AdminRepo>()));
+  sl.registerLazySingleton(() => FetchMapUsecase(repo: sl<TravelRepo>()));
+  sl.registerLazySingleton(
+      () => AddUserActivityUsecase(repo: sl<TravelRepo>()));
 
 //bloc
   sl.registerFactory(
@@ -92,4 +106,8 @@ void init() {
       updateTrailWithMapUsecase: sl<UpdateTrailWithMapUsecase>(),
     ),
   );
+
+  sl.registerFactory(() => NavigationBloc(
+      fetchMapUsecase: sl<FetchMapUsecase>(),
+      userActivityUsecase: sl<AddUserActivityUsecase>()));
 }

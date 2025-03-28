@@ -1,31 +1,22 @@
-import "dart:io";
-
-import "package:bloc/bloc.dart";
 import "package:flutter/material.dart";
-import "package:flutter_bloc/flutter_bloc.dart";
-import "package:frontend/Features/Admin/presentation/Bloc/admin_bloc.dart";
-import "package:frontend/Features/Admin/presentation/Screen/Update_trial.dart";
+
 import "package:frontend/Features/Home/Domain/Entity/Hiking_Card_Item.dart";
 import "package:frontend/Features/Home/Presentation/Bloc/home_bloc.dart";
-import "package:gap/gap.dart";
-import "package:toastification/toastification.dart";
+import "package:frontend/Features/Travel_Route/Presentation/Screen/Travel_Route_Screen.dart";
 
-class TrailCard extends StatefulWidget {
-  const TrailCard({super.key, required this.data, required this.homeBloc});
+class Usercard extends StatefulWidget {
+  const Usercard({super.key, required this.data, required this.homeBloc});
   final HomeBloc homeBloc;
   final HikingCardItem data;
   @override
-  State<TrailCard> createState() => _TrailCardState();
+  State<Usercard> createState() => _UsercardState();
 }
 
-class _TrailCardState extends State<TrailCard> {
-  late AdminBloc _adminBloc;
-
+class _UsercardState extends State<Usercard> {
 // make sure to initialize before map loading
 
   @override
   void initState() {
-    _adminBloc = BlocProvider.of<AdminBloc>(context);
     super.initState();
   }
 
@@ -35,6 +26,7 @@ class _TrailCardState extends State<TrailCard> {
       width: 200,
       height: 200,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
@@ -43,8 +35,8 @@ class _TrailCardState extends State<TrailCard> {
               alignment: Alignment.bottomCenter,
               children: [
                 Container(
-                  height: 120,
-                  width: 200,
+                  height: 110,
+                  width: 180,
                   decoration: BoxDecoration(
                       // image: DecorationImage(
                       //     fit: BoxFit.cover,
@@ -64,45 +56,20 @@ class _TrailCardState extends State<TrailCard> {
                       child: IconButton(
                         onPressed: () {
                           Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      UpdateTrial(id: widget.data.id)));
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => TravelRouteScreen(
+                                id: widget.data.id,
+                              ),
+                            ),
+                          );
                         },
                         icon: const Icon(
-                          Icons.edit,
+                          Icons.hiking_rounded,
                         ),
                         style: const ButtonStyle(
                             iconColor: WidgetStatePropertyAll(
                                 Color.fromARGB(255, 31, 150, 71))),
-                      ),
-                    ),
-                    Container(
-                      height: 40,
-                      width: 40,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(100)),
-                      child: IconButton(
-                        onPressed: () {
-                          _adminBloc
-                              .add(DeleteTrailWithMapEvent(id: widget.data.id));
-                          widget.homeBloc.add(GetAllTrailsEvent());
-                          toastification.show(
-                            context: context,
-                            type: ToastificationType.success,
-                            title: const Text(
-                                'Trail With Map Deleted Sucessfully'),
-                            style: ToastificationStyle.minimal,
-                            autoCloseDuration: const Duration(seconds: 5),
-                          );
-                        },
-                        icon: const Icon(
-                          Icons.delete_rounded,
-                        ),
-                        style: const ButtonStyle(
-                            iconColor: WidgetStatePropertyAll(
-                                Color.fromARGB(255, 255, 136, 136))),
                       ),
                     ),
                   ],
@@ -110,12 +77,11 @@ class _TrailCardState extends State<TrailCard> {
               ],
             ),
           ),
-          const Gap(5),
           Text(
             widget.data.name ?? "Empty",
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
           ),
           const Text(
             "Manaslu circuit",
@@ -130,7 +96,7 @@ class _TrailCardState extends State<TrailCard> {
               ),
               Text(
                 '${widget.data.difficulty}' ". ",
-                style: TextStyle(fontWeight: FontWeight.w500),
+                style: const TextStyle(fontWeight: FontWeight.w500),
               ),
               Text(
                 '${widget.data.length}' "KM",

@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:frontend/Features/Home/Data/model/Hiking_Card_Model.dart';
+import 'package:frontend/contrant/Network_Route.dart';
 import 'package:logger/logger.dart';
 
 abstract class RemoteDataSource {
@@ -11,11 +12,10 @@ class RemoteDataSourceImp extends RemoteDataSource {
   final Logger log;
 
   RemoteDataSourceImp(this.dio, this.log);
-
   @override
   Future<List<HikingCardModel>?> getHomePageDetails() async {
     var result = await dio
-        .get("https://192.168.42.103:5001/api/User/GetAllTrial")
+        .get("$localHostUrl/api/User/GetAllTrial")
         .timeout(const Duration(seconds: 5));
     log.e(result.data);
     log.e(result);

@@ -30,7 +30,7 @@ class CreateTrailWithMap {
   String diffculty;
   String location;
 //Map related
-  String? mapName = "need to be removed";
+  String? mapName;
   String? destinationLatlang;
   String? startLatlang;
   double? altitude; // all need to be changed in decimal
@@ -49,7 +49,7 @@ class CreateTrailWithMap {
       required this.distance,
       required this.averageTime,
       required this.location,
-      this.mapName,
+      required this.mapName,
       required this.polypoints,
       required this.diffculty});
 }

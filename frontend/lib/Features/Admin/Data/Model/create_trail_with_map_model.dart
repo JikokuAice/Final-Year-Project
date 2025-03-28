@@ -27,7 +27,7 @@ class CreateTrailWithMapModel {
       required this.distance,
       required this.location,
       this.averageTime,
-      this.mapName,
+      required this.mapName,
       this.polypoints,
       required this.difficulty});
 

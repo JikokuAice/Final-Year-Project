@@ -263,6 +263,7 @@ class _AddMapState extends State<AddMap> {
                             }
 
                             var model = CreateTrailWithMap(
+                              mapName: trailForumData.name,
                               name: trailForumData.name,
                               images: trailForumData.images,
                               description: trailForumData.description,
@@ -272,7 +273,7 @@ class _AddMapState extends State<AddMap> {
                               destinationLatlang:
                                   '${_destination!.latitude.toString()}, ${_destination!.longitude.toString()}',
                               startLatlang:
-                                  '${_destination!.latitude.toString()}, ${_destination!.longitude.toString()}',
+                                  '${_startPoint!.latitude.toString()}, ${_startPoint!.longitude.toString()}',
                               altitude: double.parse(altitude),
                               distance: double.parse(distance),
                               polypoints: encodedPolyline,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:frontend/Features/Home/Presentation/Bloc/home_bloc.dart';
 import 'package:frontend/Features/Home/Presentation/Widget/Card.dart';
+import 'package:frontend/Features/Home/Presentation/Widget/UserCard.dart';
 import 'package:gap/gap.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:toastification/toastification.dart';
@@ -105,7 +106,9 @@ class _HomeState extends State<Home> {
                         ),
                         BottomNavigationBarItem(
                             icon: IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushNamed(context, "profile");
+                              },
                               icon: const Icon(Icons.person_2_outlined),
                             ),
                             label: "Profile")
@@ -143,7 +146,9 @@ class _HomeState extends State<Home> {
                             label: "Favorities"),
                         BottomNavigationBarItem(
                             icon: IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushNamed(context, "profile");
+                              },
                               icon: const Icon(Icons.person_2_outlined),
                             ),
                             label: "Profile")
@@ -197,10 +202,14 @@ class _HomeState extends State<Home> {
                       itemBuilder: (context, index) {
                         return Padding(
                           padding: const EdgeInsets.all(5),
-                          child: TrailCard(
-                            homeBloc: homeBloc,
-                            data: state.fetchedData[index],
-                          ),
+                          child: role != "Admin"
+                              ? Usercard(
+                                  data: state.fetchedData[index],
+                                  homeBloc: homeBloc)
+                              : TrailCard(
+                                  homeBloc: homeBloc,
+                                  data: state.fetchedData[index],
+                                ),
                         );
                       });
                 }
