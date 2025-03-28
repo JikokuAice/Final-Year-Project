@@ -1,5 +1,5 @@
 ﻿using Backend.Application.Authentication.DTOs;
-using Backend.Application.User.Dtos;
+using Backend.Application.User.Entity;
 using Backend.Domain.Repository;
 using MediatR;
 using System;

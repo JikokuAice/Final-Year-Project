@@ -10,5 +10,10 @@ namespace Backend.Domain.Repository
    public interface  IUserRepoService
     {
        List<Trail> GetAllTrail();
+       Task<Trail> GetSpecificTrail(int Id);
+         
+        Task<Map?> GetSpecificMap(int Id);
+        Task<bool> AddUserActivity(UserActivites userActivites);
+       List<UserActivites> GetAllUserActivity(int Id);
     }
 }

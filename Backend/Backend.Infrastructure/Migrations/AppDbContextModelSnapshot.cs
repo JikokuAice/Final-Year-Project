@@ -59,19 +59,19 @@ namespace Backend.Infrasturcture.Migrations
                     b.Property<string>("AverageTime")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Distance")
-                        .HasColumnType("float");
-
-                    b.Property<double?>("Latitude")
-                        .HasColumnType("float");
-
-                    b.Property<double?>("Longitude")
+                    b.Property<double?>("Distance")
                         .HasColumnType("float");
 
                     b.Property<string>("MapName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Polypoints")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("destinationLatlang")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("startLatlang")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -116,11 +116,19 @@ namespace Backend.Infrasturcture.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Admin"
+                        });
                 });
 
             modelBuilder.Entity("Backend.Domain.Entity.Suggestion", b =>
@@ -156,20 +164,23 @@ namespace Backend.Infrasturcture.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Elevation")
-                        .HasColumnType("int");
+                    b.Property<string>("Difficulty")
+                        .HasColumnType("nvarchar(max)");
 
                     b.PrimitiveCollection<string>("Images")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Length")
-                        .HasColumnType("int");
+                    b.Property<string>("Location")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("MapId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<double?>("Rating")
+                        .HasColumnType("float");
 
                     b.Property<string>("TrailType")
                         .HasColumnType("nvarchar(max)");
@@ -227,7 +238,7 @@ namespace Backend.Infrasturcture.Migrations
                             Email = "np05cp4a220031@iic.edu.np",
                             Image = "",
                             Name = "Admin",
-                            Password = "$2a$13$r7KCrtp1urxL.LAp6fameOrtQmy6pNREhqBJ99Oi5kRRMcyjpgapS",
+                            Password = "Ayush025584216",
                             RoleId = 1
                         });
                 });
@@ -243,22 +254,41 @@ namespace Backend.Infrasturcture.Migrations
                     b.Property<DateTime>("ActivityDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<double>("AvgSpeed")
-                        .HasColumnType("float");
-
-                    b.Property<double>("DistanceCovered")
-                        .HasColumnType("float");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("AvgSpeed")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Route")
+                    b.Property<string>("DistanceCovered")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TimeElapsed")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("TrailId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("TrailId1")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TrailName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("UserId1")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("TrailId");
+
+                    b.HasIndex("TrailId1")
+                        .IsUnique()
+                        .HasFilter("[TrailId1] IS NOT NULL");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("UserId1");
 
                     b.ToTable("UserActivity");
                 });
@@ -281,9 +311,46 @@ namespace Backend.Infrasturcture.Migrations
                     b.Navigation("Role");
                 });
 
+            modelBuilder.Entity("Backend.Domain.Entity.UserActivites", b =>
+                {
+                    b.HasOne("Backend.Domain.Entity.Trail", "Trail")
+                        .WithOne()
+                        .HasForeignKey("Backend.Domain.Entity.UserActivites", "TrailId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Backend.Domain.Entity.Trail", null)
+                        .WithOne("UserActivites")
+                        .HasForeignKey("Backend.Domain.Entity.UserActivites", "TrailId1");
+
+                    b.HasOne("Backend.Domain.Entity.User", null)
+                        .WithMany("userActivites")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Backend.Domain.Entity.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId1");
+
+                    b.Navigation("Trail");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Backend.Domain.Entity.Role", b =>
                 {
                     b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("Backend.Domain.Entity.Trail", b =>
+                {
+                    b.Navigation("UserActivites");
+                });
+
+            modelBuilder.Entity("Backend.Domain.Entity.User", b =>
+                {
+                    b.Navigation("userActivites");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,5 +1,5 @@
 ﻿using Backend.Application.Authentication.DTOs;
-using Backend.Application.User.Dtos;
+using Backend.Application.User.Entity;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Backend.Application.User.Query.GetAllTrails
 {
-   public class GetAllTrailQuery : IRequest<List<UserTrailDtos?>>
+    public class GetAllTrailQuery : IRequest<List<UserTrailDtos?>>
     {
 
     }

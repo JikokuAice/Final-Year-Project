@@ -22,7 +22,7 @@ public class User
    
    public Role? Role { get; set; }
    
-   
+   public IList<UserActivites>? userActivites { get; set; }
    
    
 }

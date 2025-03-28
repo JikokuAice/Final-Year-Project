@@ -77,6 +77,7 @@ string? accessToken = new JwtSecurityTokenHandler().WriteToken(token);
       {
          AccessToken = accessToken,
          RefreshToken = refreshToken,
+         role = user.Role.Name.ToString(),
       };
       
    }

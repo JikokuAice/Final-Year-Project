@@ -21,17 +21,28 @@ public class AppDbContext:DbContext
    {
       var adminEmail = _configuration.GetSection("Backend_Admin_Email");
       var adminPassword = _configuration.GetSection("Backend_Admin_Password");
-      var adminHashed = BCrypt.Net.BCrypt.EnhancedHashPassword(adminPassword.Value,13);
-      
-      User admin = new User()
+   //   var adminHashed = BCrypt.Net.BCrypt.EnhancedHashPassword(adminPassword.Value,13);
+
+        
+        User admin = new User()
       {
-         Email = adminEmail.Value, Password = adminHashed, Name = "Admin", RoleId = 1, Image = "",Id = -1
+         Email = adminEmail.Value, Password = adminPassword.Value, Name = "Admin", RoleId = 1, Image = "",Id = -1
       };
-      
-      modelBuilder.Entity<User>(e => e.HasData(admin)); 
+
+        modelBuilder.Entity<Role>().HasData(new Role(id:1,name:"Admin"));
+        modelBuilder.Entity<User>(e => e.HasData(admin)); 
       modelBuilder.Entity<Trail>().HasOne(e=>e.Maps).WithOne().HasForeignKey<Trail>(e=>e.MapId);
-      
-   }
+        modelBuilder.Entity<UserActivites>().HasOne(e => e.Trail).WithOne().HasForeignKey<UserActivites>(e => e.TrailId);
+        modelBuilder.Entity<User>().HasMany(e => e.userActivites).WithOne().HasForeignKey(e => e.UserId);
+        modelBuilder.Entity<UserActivites>()
+        .HasIndex(ua => ua.TrailId)
+        .IsUnique(false); // Ensure TrailId is not unique
+
+        modelBuilder.Entity<UserActivites>()
+            .HasIndex(ua => ua.UserId)
+            .IsUnique(false); // Ensure
+
+    }
 
    // public DbSet<Test> Tests { get; set; }
    public DbSet<User> Users { get; set; }
