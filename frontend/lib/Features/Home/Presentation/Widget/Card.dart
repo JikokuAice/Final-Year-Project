@@ -7,6 +7,7 @@ import "package:frontend/Features/Admin/presentation/Bloc/admin_bloc.dart";
 import "package:frontend/Features/Admin/presentation/Screen/Update_trial.dart";
 import "package:frontend/Features/Home/Domain/Entity/Hiking_Card_Item.dart";
 import "package:frontend/Features/Home/Presentation/Bloc/home_bloc.dart";
+import "package:frontend/contrant/Network_Route.dart";
 import "package:gap/gap.dart";
 import "package:toastification/toastification.dart";
 
@@ -46,9 +47,11 @@ class _TrailCardState extends State<TrailCard> {
                   height: 120,
                   width: 200,
                   decoration: BoxDecoration(
-                      // image: DecorationImage(
-                      //     fit: BoxFit.cover,
-                      //     image: FileImage(File(widget.data.images![0]))),
+                      image: const DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage(
+                            "https://7b79-103-166-101-71.ngrok-free.app/uploads/Home_0.jpg"),
+                      ),
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(10)),
                 ),

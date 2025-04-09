@@ -6,6 +6,7 @@ import 'package:frontend/Features/Admin/presentation/Screen/add_map.dart';
 import 'package:frontend/Features/Authentication/Presentation/Bloc/auth_bloc.dart';
 import 'package:frontend/Features/Home/Presentation/Bloc/home_bloc.dart';
 import 'package:frontend/Features/Home/Presentation/Page/Home.dart';
+import 'package:frontend/Features/Profile/Presentation/bloc/profile_bloc.dart';
 import 'package:frontend/Features/Travel_Route/Presentation/bloc/navigation_bloc.dart';
 import 'App/Dependency_Injection/dependency_injection.dart' as di;
 
@@ -32,6 +33,9 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => di.sl<NavigationBloc>(),
+        ),
+        BlocProvider(
+          create: (context) => di.sl<ProfileBloc>(),
         )
       ],
       child: MaterialApp(

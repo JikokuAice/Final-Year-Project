@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:jwt_decoder/jwt_decoder.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -24,8 +25,19 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   Future<void> navigateToApplication() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
+    var token = prefs.get("acessToken");
     bool isOnBoard = prefs.getBool('IsOnBoard') ?? false;
-    var isLoggedIn = prefs.get("acessToken") != null;
+    var isLoggedIn = token != null;
+    var checkTokenExpiry =
+        isLoggedIn ? JwtDecoder.isExpired(token.toString()) : true;
+
+    if (token == null || checkTokenExpiry) {
+      prefs.remove("accessToken");
+      prefs.remove("refreshToken");
+      Navigator.pushReplacementNamed(context, "login");
+      return;
+    }
+
     if (!isOnBoard) {
       // ignore: use_build_context_synchronously
       Navigator.pushReplacementNamed(context, "onboarding_screen");

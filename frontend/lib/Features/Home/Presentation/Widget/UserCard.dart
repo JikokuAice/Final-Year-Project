@@ -3,6 +3,7 @@ import "package:flutter/material.dart";
 import "package:frontend/Features/Home/Domain/Entity/Hiking_Card_Item.dart";
 import "package:frontend/Features/Home/Presentation/Bloc/home_bloc.dart";
 import "package:frontend/Features/Travel_Route/Presentation/Screen/Travel_Route_Screen.dart";
+import "package:frontend/contrant/Network_Route.dart";
 
 class Usercard extends StatefulWidget {
   const Usercard({super.key, required this.data, required this.homeBloc});
@@ -38,9 +39,11 @@ class _UsercardState extends State<Usercard> {
                   height: 110,
                   width: 180,
                   decoration: BoxDecoration(
-                      // image: DecorationImage(
-                      //     fit: BoxFit.cover,
-                      //     image: FileImage(File(widget.data.images![0]))),
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage(
+                            '$localHostUrl${widget.data.images![0]}'),
+                      ),
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(10)),
                 ),

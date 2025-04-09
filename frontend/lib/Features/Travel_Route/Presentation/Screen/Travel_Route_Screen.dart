@@ -47,7 +47,7 @@ class _TravelRouteScreenState extends State<TravelRouteScreen> {
   late BitmapDescriptor endIcon;
   late BitmapDescriptor userIcon;
   late Bloc _travelBloc;
-  late LatLng userPosition;
+  late LatLng userPosition = LatLng(26.6646, 87.2718);
   late LatLng routeLocation;
   late LatLng hikingStartPosition;
   Stopwatch _stopwatch = Stopwatch();
@@ -82,9 +82,11 @@ class _TravelRouteScreenState extends State<TravelRouteScreen> {
 
   void updatePosition() async {
     var position = await _determinePosition();
-    setState(() {
-      userPosition = LatLng(position.latitude, position.longitude);
-    });
+    if (mounted) {
+      setState(() {
+        userPosition = LatLng(position.latitude, position.longitude);
+      });
+    }
     addUserMarker();
   }
 

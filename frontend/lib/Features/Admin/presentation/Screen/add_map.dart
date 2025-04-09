@@ -226,7 +226,7 @@ class _AddMapState extends State<AddMap> {
                     ElevatedButton(
                         style: ButtonStyle(
                           backgroundColor: const WidgetStatePropertyAll(
-                            Color.fromRGBO(0, 0, 0, 1),
+                            Color.fromRGBO(66, 175, 7, 1),
                           ),
                           padding: const WidgetStatePropertyAll(
                             EdgeInsets.only(

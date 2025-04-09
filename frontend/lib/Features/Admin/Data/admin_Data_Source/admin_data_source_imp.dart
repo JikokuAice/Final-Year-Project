@@ -26,21 +26,28 @@ class AdminDataSourceImp extends AdminDataSource {
       CreateTrailWithMapModel trailAndMap) async {
     try {
       List<MultipartFile> formDatas = [];
+      List<String> images = [];
+      for (int i = 0; i < trailAndMap.images.length; i++) {
+        var extension = trailAndMap.images[i].split(".").last;
 
-      //  for (int i = 0; i < trailAndMap.images.length; i++) {
-      //   var extension = trailAndMap.images[i].path.split(".").last;
+        formDatas.add(await MultipartFile.fromFile(trailAndMap.images[i],
+            filename: '${trailAndMap.name}_$i.$extension'));
+      }
 
-      //   formDatas.add(await MultipartFile.fromFile(trailAndMap.images[i].path,
-      //      filename: '${trailAndMap.name}_$i.$extension'));
-      //  }
+      FormData formData = FormData.fromMap({'file': formDatas});
+      var imageUrl =
+          await dio.post('$localHostUrl/Admin/imageUpload', data: formData);
+
+      log.e(imageUrl);
+
+      trailAndMap.images = List<String>.from(imageUrl.data);
+      log.e(images);
       var trailAndMapJson = trailAndMap.toJson();
-      // FormData formData = FormData.fromMap({'file': formDatas});
 
-      // log.f(trailAndMapJson);
       var result =
           await dio.post('$localHostUrl/AddTrail', data: trailAndMapJson);
       // log.e(result.data);
-      // trailAndMap.images= result.data;
+
       return result.statusMessage;
     } catch (e) {
       log.e(e);

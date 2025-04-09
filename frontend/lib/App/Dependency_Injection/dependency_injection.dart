@@ -20,6 +20,11 @@ import 'package:frontend/Features/Home/Data/Repositories/home_repo_imp.dart';
 import 'package:frontend/Features/Home/Domain/Repository/home_repo.dart';
 import 'package:frontend/Features/Home/Domain/Usecase/get_hiking_item_usecase.dart';
 import 'package:frontend/Features/Home/Presentation/Bloc/home_bloc.dart';
+import 'package:frontend/Features/Profile/Data/Data_Source/Profile_Data_Source.dart';
+import 'package:frontend/Features/Profile/Data/Repositories/Profile_Repo_Imp.dart';
+import 'package:frontend/Features/Profile/Domain/Repository/Profile_domain_Repository.dart';
+import 'package:frontend/Features/Profile/Domain/use%20case/Get_Useractivity_Usecase.dart';
+import 'package:frontend/Features/Profile/Presentation/bloc/profile_bloc.dart';
 import 'package:frontend/Features/Travel_Route/Data/Data_Source/travel_data_source_imp.dart';
 import 'package:frontend/Features/Travel_Route/Data/Repository/Travel_Repository_Imp.dart';
 import 'package:frontend/Features/Travel_Route/Domain/Repo/Travel_Repo.dart';
@@ -49,6 +54,8 @@ void init() {
       () => AdminDataSourceImp(sl<Dio>(), sl<Logger>()));
   sl.registerLazySingleton<TravelDataSource>(
       () => TravelDataSourceImp(sl<Dio>(), sl<Logger>()));
+  sl.registerLazySingleton<ProfileDataSource>(
+      () => ProfileDataSourceImp(sl<Dio>(), sl<Logger>()));
 
 //Repositories
   sl.registerLazySingleton<AuthRepo>(
@@ -61,28 +68,67 @@ void init() {
 
   sl.registerLazySingleton<TravelRepo>(
       () => TravelRepositoryImp(dataSource: sl<TravelDataSource>()));
+  sl.registerLazySingleton<ProfileDomainRepository>(
+      () => ProfileRepoImp(sl<ProfileDataSource>()));
 
 //Usecases
-  sl.registerLazySingleton(() => RegisterUsecase(authRepo: sl<AuthRepo>()));
-  sl.registerLazySingleton(() => LoginUsecase(authRepo: sl<AuthRepo>()));
   sl.registerLazySingleton(
-      () => GetHikingItemUsecase(homeRepo: sl<HomeRepo>()));
+    () => RegisterUsecase(
+      authRepo: sl<AuthRepo>(),
+    ),
+  );
   sl.registerLazySingleton(
-      () => RetriveElevationUsecase(adminRepo: sl<AdminRepo>()));
+    () => LoginUsecase(
+      authRepo: sl<AuthRepo>(),
+    ),
+  );
   sl.registerLazySingleton(
-      () => CreateTrailWithMapUsecase(adminRepo: sl<AdminRepo>()));
+    () => GetHikingItemUsecase(
+      homeRepo: sl<HomeRepo>(),
+    ),
+  );
+  sl.registerLazySingleton(
+    () => RetriveElevationUsecase(
+      adminRepo: sl<AdminRepo>(),
+    ),
+  );
+  sl.registerLazySingleton(
+    () => CreateTrailWithMapUsecase(
+      adminRepo: sl<AdminRepo>(),
+    ),
+  );
 
   sl.registerLazySingleton(
-      () => DeleteTrailWithMapUsecase(adminRepo: sl<AdminRepo>()));
+    () => DeleteTrailWithMapUsecase(
+      adminRepo: sl<AdminRepo>(),
+    ),
+  );
 
   sl.registerLazySingleton(
-      () => GetSepecificTrailUsecase(adminRepo: sl<AdminRepo>()));
+    () => GetSepecificTrailUsecase(
+      adminRepo: sl<AdminRepo>(),
+    ),
+  );
   sl.registerLazySingleton(
-      () => UpdateTrailWithMapUsecase(adminRepo: sl<AdminRepo>()));
-  sl.registerLazySingleton(() => FetchMapUsecase(repo: sl<TravelRepo>()));
+    () => UpdateTrailWithMapUsecase(
+      adminRepo: sl<AdminRepo>(),
+    ),
+  );
   sl.registerLazySingleton(
-      () => AddUserActivityUsecase(repo: sl<TravelRepo>()));
-
+    () => FetchMapUsecase(
+      repo: sl<TravelRepo>(),
+    ),
+  );
+  sl.registerLazySingleton(
+    () => AddUserActivityUsecase(
+      repo: sl<TravelRepo>(),
+    ),
+  );
+  sl.registerLazySingleton(
+    () => GetUseractivityUsecase(
+      repository: sl<ProfileDomainRepository>(),
+    ),
+  );
 //bloc
   sl.registerFactory(
     () => AuthBloc(
@@ -107,7 +153,16 @@ void init() {
     ),
   );
 
-  sl.registerFactory(() => NavigationBloc(
+  sl.registerFactory(
+    () => NavigationBloc(
       fetchMapUsecase: sl<FetchMapUsecase>(),
-      userActivityUsecase: sl<AddUserActivityUsecase>()));
+      userActivityUsecase: sl<AddUserActivityUsecase>(),
+    ),
+  );
+
+  sl.registerFactory(
+    () => ProfileBloc(
+      getUseractivityUsecase: sl<GetUseractivityUsecase>(),
+    ),
+  );
 }
