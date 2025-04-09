@@ -24,6 +24,5 @@ namespace Backend.Application.User.Query.GetSpecificTrailDetail
             return result;
         }
 
-      
     }
 }

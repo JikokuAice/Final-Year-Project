@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Backend.Domain.Entity;
 
@@ -23,7 +24,9 @@ public class User
    public Role? Role { get; set; }
    
    public IList<UserActivites>? userActivites { get; set; }
-   
+    [JsonIgnore]
+  public IList<Comments>? userComments { get; set; }
+
    
 }
 

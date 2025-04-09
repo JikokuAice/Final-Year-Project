@@ -27,7 +27,6 @@ internal class AdminRepository:IAdminRepoServices
        trailId= createTrail.Entity.Id??0;
        return true;
     }
-
     return false;
    }
 

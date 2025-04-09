@@ -5,6 +5,7 @@ using Backend.Infrasturcture.AppContext;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,26 @@ namespace Backend.Infrasturcture.UserRepo
             _db = db;
         }
 
+        public async Task<bool?> AddComments(Comments comments)
+        {
+
+            var userExist =await  _db.Users.FindAsync(comments.UserId);
+            var trailExist = await _db.Trails.FindAsync(comments.TrailId);
+
+            if (userExist == null || trailExist == null)
+            {
+                return false;
+            }
+
+            var commentAdded =  _db.Comments.Add(comments);
+            await _db.SaveChangesAsync();
+            if (commentAdded.Entity != null) {
+                return true;
+            }
+            return false;
+             
+        }
+
         public async Task<bool> AddUserActivity(UserActivites userActivites)
         {
            var user = await _db.Users.AnyAsync(e=>e.Id==userActivites.UserId);
@@ -35,7 +56,14 @@ namespace Backend.Infrasturcture.UserRepo
 
         }
 
-     
+        public async Task<bool> DeleteComment(int userId, int commentId)
+        {
+            var userComment = await _db.Comments.FirstOrDefaultAsync(e=>e.Id==commentId&&e.UserId==userId);
+            if(userComment == null) { return false; }
+            _db.Comments.Remove(userComment);
+            await _db.SaveChangesAsync();
+            return true;
+        }
 
         public async Task<Map?> GetSpecificMap(int Id)
         {
@@ -56,7 +84,40 @@ namespace Backend.Infrasturcture.UserRepo
 
             return trailResult;
         }
+
+        public async Task<List<CommentDtos>> GetTrailComments(int trailId)
+        {
+            var trailComments = await _db.Comments.Include(e=>e.User).Where(e=>e.TrailId==trailId).Select(e=>new CommentDtos { CommentText=e.CommentText,
+Id=e.Id,
+likes=e.likes,
+UserId=e.UserId,
+User=new UserDtos
+{
+    Image=e.User!.Image,
+    Name=e.User.Name
+}
+
+            }).ToListAsync();  
+            return trailComments;
+        }
+
+        public async Task<bool> UpdateComment(int userId, int commentId, UpdateCommentDto updateCommentDto)
+        {
         
+            var trailComment = await _db.Comments.FirstOrDefaultAsync(e => e.Id == commentId && e.UserId == userId);
+            if (trailComment == null)
+            {
+                return false;
+            }
+
+           trailComment.CommentText=updateCommentDto.CommentText;
+
+            _db.Comments.Update(trailComment);
+            _db.SaveChanges();
+            return true;
+
+        }
+
 
         //this is for all trails
         List<Trail> IUserRepoService.GetAllTrail()
@@ -68,7 +129,7 @@ namespace Backend.Infrasturcture.UserRepo
 
         List<UserActivites> IUserRepoService.GetAllUserActivity(int userId)
         {
-            var Acitvities = _db.UserActivity.Where(e=>e.UserId==userId);
+            var Acitvities = _db.UserActivity.Include(e=>e.Trail).Where(e=>e.UserId==userId);
             return Acitvities.ToList();
         }
     }

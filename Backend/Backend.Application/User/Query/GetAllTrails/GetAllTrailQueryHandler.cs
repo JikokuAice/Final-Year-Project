@@ -19,7 +19,6 @@ namespace Backend.Application.User.Query.GetAllTrails
             _userRepoService = userRepoService;
         }
 
-     
 
         async Task<List<UserTrailDtos?>> IRequestHandler<GetAllTrailQuery, List<UserTrailDtos?>>.Handle(GetAllTrailQuery request, CancellationToken cancellationToken)
         {

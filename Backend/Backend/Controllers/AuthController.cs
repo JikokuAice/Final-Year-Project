@@ -47,14 +47,6 @@ public class AuthController:ControllerBase
       return Ok(result);
    }
 
-
-   [Authorize(Roles = "Admin")]
-   [HttpGet("/GetAdminSecret")]
-   public IActionResult GetSecert()
-   {
-      return Ok("admin sir we have incoming attack from section 21 side .Act asap");
-   }
-   
    
     
    

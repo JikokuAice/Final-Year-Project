@@ -7,10 +7,12 @@ using Backend.Infrasturcture.AuthRepo;
 using Backend.Infrasturcture.Services;
 using Backend.Infrasturcture.UserRepo;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Backend.Infrasturcture.Extensions;
@@ -51,6 +53,7 @@ public static  class ServiceCollectionExtension
      
      services.AddScoped<IAdminRepoServices, AdminRepository>();
      services.AddScoped<IUserRepoService, UserRepository>();
+     
 
-   }
+    }
 }

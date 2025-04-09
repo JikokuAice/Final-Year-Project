@@ -60,7 +60,7 @@ internal class AuthServices:IAuthServices
  var credentials = new SigningCredentials(symmetricKey, SecurityAlgorithms.HmacSha256);
 string? refreshToken = GenerateRefreshToken();
 user.RefreshToken = refreshToken;
-user.RefreshTokenExpiry=DateTime.Now.AddDays(7);
+user.RefreshTokenExpiry=DateTime.Now.AddDays(1);
 
  _db.Users.Update(user);
 await _db.SaveChangesAsync();
@@ -70,7 +70,7 @@ Claim[] claim = new Claim[]
    new Claim(ClaimTypes.PrimarySid, user.Id.ToString()),
    new Claim(ClaimTypes.Role, user.Role.Name.ToString()),
 };
-var token = new JwtSecurityToken(issuer:issuer,audience:audience,claims: claim,signingCredentials: credentials,expires:DateTime.Now.AddMinutes(15));
+var token = new JwtSecurityToken(issuer:issuer,audience:audience,claims: claim,signingCredentials: credentials,expires: DateTime.Now.AddDays(1));
 string? accessToken = new JwtSecurityTokenHandler().WriteToken(token);
 
       return new TokenDto()

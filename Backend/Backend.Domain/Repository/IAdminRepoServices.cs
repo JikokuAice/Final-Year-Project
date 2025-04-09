@@ -9,4 +9,5 @@ public interface IAdminRepoServices
     Task<bool> DeleteMapAndTrail(int Id);
     Task<bool> EditTrailAsync(Trail trail);
     Task<bool> EditMapAsync(Map map);
+   
 }

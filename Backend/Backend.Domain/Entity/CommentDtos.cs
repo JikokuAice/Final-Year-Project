@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Backend.Domain.Entity
+{
+    public class CommentDtos
+    {
+    
+        public int Id { get; set; }
+  
+        public string? CommentText { get; set; }
+
+        public int likes { get; set; } = 0;
+
+        public int UserId { get; set; }
+
+        public UserDtos? User { get; set; }
+
+    }
+}

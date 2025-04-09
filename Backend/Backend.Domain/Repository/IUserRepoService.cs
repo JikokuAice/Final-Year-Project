@@ -11,9 +11,17 @@ namespace Backend.Domain.Repository
     {
        List<Trail> GetAllTrail();
        Task<Trail> GetSpecificTrail(int Id);
-         
-        Task<Map?> GetSpecificMap(int Id);
-        Task<bool> AddUserActivity(UserActivites userActivites);
+       Task<Map?> GetSpecificMap(int Id);
+       Task<bool> AddUserActivity(UserActivites userActivites);
        List<UserActivites> GetAllUserActivity(int Id);
+
+        Task<List<CommentDtos>> GetTrailComments(int trailId);
+
+        Task<bool?> AddComments(Comments comments);
+
+        Task<bool> DeleteComment(int userId, int commentId);
+        Task<bool> UpdateComment(int userId,int commentId,UpdateCommentDto updateCommentDto);
+
+
     }
 }

@@ -1,9 +1,10 @@
-using Backend.Application.Admin.Command.CreateTrails;
+﻿using Backend.Application.Admin.Command.CreateTrails;
 using Backend.Application.Admin.Command.DeleteTrail;
 using Backend.Application.Admin.Command.EditTrail;
 using Backend.Domain.Entity;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using System.IO;
 
 namespace Backend.Controllers;
@@ -13,11 +14,14 @@ namespace Backend.Controllers;
 [Route("/[controller]")]
 public class AdminController:ControllerBase
 {
-   
-   private readonly IMediator _mediator;
-   public AdminController(IMediator mediator)
+    private readonly IWebHostEnvironment _env;
+
+    private readonly IMediator _mediator;
+   public AdminController(IMediator mediator, IWebHostEnvironment env)
    {
       _mediator = mediator;
+        _env = env;
+
    }
    
  
@@ -26,6 +30,8 @@ public class AdminController:ControllerBase
    public async Task<IActionResult> CreateTrail([FromBody]CreateTrailCommand createTrail)
    {
 
+
+      
       var result = await _mediator.Send(createTrail);
       if (result)
       {
@@ -68,36 +74,46 @@ public class AdminController:ControllerBase
     }
 
 
- //   [HttpPost("/imageUpload")]
-   // public async Task<IActionResult> UploadImage([FromForm] List<IFormFile> file)
-    //{
-      //  var Paths = new List<string>();
+    [HttpPost("imageUpload")]
+    public async Task<IActionResult> UploadImage([FromForm] List<IFormFile> file)
+    {
+        var Paths = new List<string>();
+        var fileUrls = new List<string>();
+
+        if (file == null)
+        {
+            return BadRequest("hell nah");
+
+        }
+
        
-        //if (file == null)
-        //{
-          //  return BadRequest("hell nah");
-
-        //}
-
-        //foreach (var fileItem in file)
-        //{
-          //  if (fileItem == null||fileItem.Length==0)
-            //{
-              //  return NotFound("Please upload correct image file");
-            //}
-            //var path = Path.Combine("C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Images\\",fileItem.FileName);
-            //Paths.Add(path);
-            //using (FileStream stream = new FileStream(path, FileMode.Create))
-            //{
-              //  fileItem.CopyTo(stream);
-               // stream.Close();
-            //}
-        //}
-
-        // return Ok(Paths);
-
+        
+        foreach (var fileItem in file)
+        {
+            if (fileItem == null || fileItem.Length == 0)
+            {
+                return NotFound("Please upload correct image file");
+            }
+            var uploadsFolder = Path.Combine(_env.WebRootPath, "uploads");
+            if (!Directory.Exists(uploadsFolder))
+            {
+                Directory.CreateDirectory(uploadsFolder); 
+            }
+            var path = Path.Combine(uploadsFolder, fileItem.FileName);
+            Paths.Add(path);
+            using (FileStream stream = new FileStream(path, FileMode.Create))
+            {
+               await fileItem.CopyToAsync(stream);
+              
+            }
+            fileUrls.Add($"uploads/{fileItem.FileName}");
+        }
 
 
+        return Ok(fileUrls);
+
+
+    }
 
     }
    

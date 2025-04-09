@@ -1,6 +1,7 @@
 using Backend.Infrasturcture;
 using Backend.Infrasturcture.Extensions;
 using Backend.Application.Extensions;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,12 +16,33 @@ builder.WebHost.ConfigureKestrel(serverOpt =>
         listenOpt.UseHttps();
     });
 
+
 });
 
-builder.Services.AddControllers();
+
+builder.Services.AddCors(policy =>
+policy.AddPolicy("MyPolicy", builder => { 
+builder.AllowAnyOrigin();
+    builder.AllowAnyMethod();
+    builder.AllowAnyHeader();
+    builder.AllowCredentials();
+})
+);
+
+
+
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+options.JsonSerializerOptions.WriteIndented = true;
+
+
+});
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddSwaggerGen();
+
+
 
 var app = builder.Build();
 // Configure the HTTP request pipeline. 
@@ -37,11 +59,12 @@ if (app.Environment.IsProduction())
    app.UseSwaggerUI();
 }
 
+
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseStaticFiles();
 app.MapControllers();
 
 app.Run();

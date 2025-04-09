@@ -22,6 +22,36 @@ namespace Backend.Infrasturcture.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Backend.Domain.Entity.Comments", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CommentText")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TrailId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("likes")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TrailId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("Backend.Domain.Entity.Feed", b =>
                 {
                     b.Property<int>("Id")
@@ -293,6 +323,25 @@ namespace Backend.Infrasturcture.Migrations
                     b.ToTable("UserActivity");
                 });
 
+            modelBuilder.Entity("Backend.Domain.Entity.Comments", b =>
+                {
+                    b.HasOne("Backend.Domain.Entity.Trail", "Trail")
+                        .WithMany("Comments")
+                        .HasForeignKey("TrailId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Backend.Domain.Entity.User", "User")
+                        .WithMany("userComments")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Trail");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Backend.Domain.Entity.Trail", b =>
                 {
                     b.HasOne("Backend.Domain.Entity.Map", "Maps")
@@ -314,8 +363,8 @@ namespace Backend.Infrasturcture.Migrations
             modelBuilder.Entity("Backend.Domain.Entity.UserActivites", b =>
                 {
                     b.HasOne("Backend.Domain.Entity.Trail", "Trail")
-                        .WithOne()
-                        .HasForeignKey("Backend.Domain.Entity.UserActivites", "TrailId")
+                        .WithMany()
+                        .HasForeignKey("TrailId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -345,12 +394,16 @@ namespace Backend.Infrasturcture.Migrations
 
             modelBuilder.Entity("Backend.Domain.Entity.Trail", b =>
                 {
+                    b.Navigation("Comments");
+
                     b.Navigation("UserActivites");
                 });
 
             modelBuilder.Entity("Backend.Domain.Entity.User", b =>
                 {
                     b.Navigation("userActivites");
+
+                    b.Navigation("userComments");
                 });
 #pragma warning restore 612, 618
         }

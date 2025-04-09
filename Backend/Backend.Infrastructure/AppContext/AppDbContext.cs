@@ -32,8 +32,11 @@ public class AppDbContext:DbContext
         modelBuilder.Entity<Role>().HasData(new Role(id:1,name:"Admin"));
         modelBuilder.Entity<User>(e => e.HasData(admin)); 
       modelBuilder.Entity<Trail>().HasOne(e=>e.Maps).WithOne().HasForeignKey<Trail>(e=>e.MapId);
-        modelBuilder.Entity<UserActivites>().HasOne(e => e.Trail).WithOne().HasForeignKey<UserActivites>(e => e.TrailId);
+      modelBuilder.Entity<UserActivites>().HasOne(e => e.Trail).WithMany().HasForeignKey(e=>e.TrailId);
         modelBuilder.Entity<User>().HasMany(e => e.userActivites).WithOne().HasForeignKey(e => e.UserId);
+
+
+
         modelBuilder.Entity<UserActivites>()
         .HasIndex(ua => ua.TrailId)
         .IsUnique(false); // Ensure TrailId is not unique
@@ -41,6 +44,10 @@ public class AppDbContext:DbContext
         modelBuilder.Entity<UserActivites>()
             .HasIndex(ua => ua.UserId)
             .IsUnique(false); // Ensure
+
+        modelBuilder.Entity<Comments>().HasOne(e => e.Trail).WithMany(e=>e.Comments).HasForeignKey(e => e.TrailId);
+        modelBuilder.Entity<Comments>().HasOne(e => e.User).WithMany(e=>e.userComments).HasForeignKey(e => e.UserId);
+
 
     }
 
@@ -53,6 +60,8 @@ public class AppDbContext:DbContext
    public DbSet<Trail> Trails { get; set; }
    public DbSet<Review> Reviews { get; set; }
    public DbSet<UserActivites> UserActivity { get; set; }
+
+  public DbSet<Comments> Comments { get; set; }
 
  
 

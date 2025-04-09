@@ -14,11 +14,12 @@ public class Trail
    public double? Rating { get; set; }
    public string? Difficulty { get; set; }
   
-
-   public int? MapId;
-   public Map? Maps { get; set; }
+ public int? MapId;
+public Map? Maps { get; set; }
 
 public UserActivites? UserActivites { get; set; }
+public List<Comments>? Comments { get; set; }
+
 }
 
 

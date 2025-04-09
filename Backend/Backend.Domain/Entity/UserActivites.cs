@@ -10,8 +10,8 @@ public class UserActivites
    public string? TrailName { get; set; }
    public string? DistanceCovered { get; set; }
    public string? AvgSpeed { get; set; }
-  public string? TimeElapsed { get; set; }  
-  public DateTime ActivityDate { get; set; }
+  public string? TimeElapsed { get; set; }
+    public DateTime ActivityDate { get; set; }
     public int TrailId { get; set; }
     public Trail? Trail { get; set; }
     public int UserId { get; set; }
