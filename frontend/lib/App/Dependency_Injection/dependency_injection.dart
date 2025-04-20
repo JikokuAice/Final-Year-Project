@@ -18,7 +18,11 @@ import 'package:frontend/Features/Authentication/Presentation/Bloc/auth_bloc.dar
 import 'package:frontend/Features/Home/Data/Data_Source/remote_data_source.dart';
 import 'package:frontend/Features/Home/Data/Repositories/home_repo_imp.dart';
 import 'package:frontend/Features/Home/Domain/Repository/home_repo.dart';
+import 'package:frontend/Features/Home/Domain/Usecase/add_user_comment_usecase.dart';
+import 'package:frontend/Features/Home/Domain/Usecase/delete_user_comment_usecase.dart';
 import 'package:frontend/Features/Home/Domain/Usecase/get_hiking_item_usecase.dart';
+import 'package:frontend/Features/Home/Domain/Usecase/get_trail_comment.dart';
+import 'package:frontend/Features/Home/Domain/Usecase/get_trail_detail_usecase.dart';
 import 'package:frontend/Features/Home/Presentation/Bloc/home_bloc.dart';
 import 'package:frontend/Features/Profile/Data/Data_Source/Profile_Data_Source.dart';
 import 'package:frontend/Features/Profile/Data/Repositories/Profile_Repo_Imp.dart';
@@ -87,6 +91,21 @@ void init() {
       homeRepo: sl<HomeRepo>(),
     ),
   );
+
+  sl.registerLazySingleton(
+    () => GetTrailDetailUsecase(
+      homeRepo: sl<HomeRepo>(),
+    ),
+  );
+
+  sl.registerLazySingleton(() => GetTrailCommentUsecase(repo: sl<HomeRepo>()));
+
+  sl.registerLazySingleton(
+      () => DeleteUserCommentUsecase(repo: sl<HomeRepo>()));
+
+  sl.registerLazySingleton(
+      () => AddUserCommentUsecase(homeRepo: sl<HomeRepo>()));
+
   sl.registerLazySingleton(
     () => RetriveElevationUsecase(
       adminRepo: sl<AdminRepo>(),
@@ -129,6 +148,7 @@ void init() {
       repository: sl<ProfileDomainRepository>(),
     ),
   );
+
 //bloc
   sl.registerFactory(
     () => AuthBloc(
@@ -139,8 +159,11 @@ void init() {
 
   sl.registerFactory(
     () => HomeBloc(
-      getHikingItemUsecase: sl<GetHikingItemUsecase>(),
-    ),
+        getTrailCommentUsecase: sl<GetTrailCommentUsecase>(),
+        getHikingItemUsecase: sl<GetHikingItemUsecase>(),
+        getTrailDetailUsecase: sl<GetTrailDetailUsecase>(),
+        deleteUserCommentUsecase: sl<DeleteUserCommentUsecase>(),
+        addUserCommentUsecase: sl<AddUserCommentUsecase>()),
   );
 
   sl.registerFactory(

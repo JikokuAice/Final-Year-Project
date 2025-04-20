@@ -32,7 +32,14 @@ class AuthRepoImp extends AuthRepo {
     final authToken = AuthToken(
         acessToken: tokenModel.acessToken,
         refreshToken: tokenModel.acessToken,
-        role: tokenModel.role);
+        role: tokenModel.role,
+        pId: tokenModel.pId);
     return authToken;
+  }
+
+  @override
+  Future<bool> deleteUserComment(int commentId, int userId) {
+    // TODO: implement deleteUserComment
+    throw UnimplementedError();
   }
 }

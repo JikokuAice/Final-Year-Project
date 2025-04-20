@@ -22,245 +22,227 @@ class _HomeState extends State<Home> {
     super.initState();
     homeBloc = context.read<HomeBloc>();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      context.read<HomeBloc>().add(GetAllTrailsEvent());
+      homeBloc.add(GetAllTrailsEvent());
     });
   }
 
   Future<String> getPrefs() async {
     final SharedPreferences pref = await SharedPreferences.getInstance();
-    return pref.get("role").toString();
+    return pref.getString("role") ?? "";
   }
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
-        future: getPrefs(),
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Scaffold(
-              body: Center(child: CircularProgressIndicator()),
-            ); // Show a loading indicator while fetching role
-          }
+    return FutureBuilder<String>(
+      future: getPrefs(),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const Scaffold(
+            body: Center(child: CircularProgressIndicator()),
+          );
+        }
 
-          if (snapshot.hasError) {
-            return const Scaffold(
-              body: Center(
-                child: Text('Error fetching role'),
+        if (snapshot.hasError) {
+          return const Scaffold(
+            body: Center(child: Text('Error fetching role')),
+          );
+        }
+
+        String role = snapshot.data ?? "";
+
+        return Scaffold(
+          appBar: AppBar(
+            actions: [
+              const Spacer(),
+              const Text(
+                "Let's Start Hiking 🥾🏕️📸",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white),
               ),
-            );
-          }
-
-          String role = snapshot.data ?? "";
-
-          return Scaffold(
-            appBar: AppBar(
-              actions: [
-                const Spacer(),
-                const Text(
-                  "Lets Start Hiking,🥾🏕️📸",
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white),
+              const Spacer(),
+              IconButton(
+                onPressed: () {
+                  showSearch(
+                    context: context,
+                    delegate: MySearchDelegate(),
+                  );
+                },
+                icon: const Icon(
+                  Icons.search_rounded,
+                  size: 30,
+                  color: Colors.white,
                 ),
-                const Spacer(),
-                IconButton(
-                    onPressed: () => {
-                          showSearch(
-                            context: context,
-                            delegate: MySeachDelegate(),
-                          ),
-                        },
-                    icon: const Icon(
-                      color: Colors.white,
-                      Icons.search_rounded,
-                      size: 35,
-                    ))
-              ],
-              toolbarHeight: 100,
-              backgroundColor: const Color.fromRGBO(0, 128, 128, 1),
-            ),
-            backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-            bottomNavigationBar: role == "Admin"
-                ? BottomNavigationBar(
-                    selectedItemColor: const Color.fromARGB(255, 218, 218, 218),
-                    unselectedItemColor: const Color(0xFF008080),
-                    items: [
-                        BottomNavigationBarItem(
-                          icon: IconButton(
-                            onPressed: () => {
-                              //   Navigator.pushReplacementNamed(context, ""),
-                            },
-                            icon: const Icon(Icons.home),
-                          ),
-                          label: "Home",
-                        ),
-                        BottomNavigationBarItem(
-                          icon: IconButton(
-                            icon: const Icon(Icons.edit_location_sharp),
-                            onPressed: () => {
-                              Navigator.pushNamed(context, "create_trail"),
-                            },
-                          ),
-                          label: "Trail Nearby",
-                        ),
-                        BottomNavigationBarItem(
-                            icon: IconButton(
-                              onPressed: () {
-                                Navigator.pushNamed(context, "profile");
-                              },
-                              icon: const Icon(Icons.person_2_outlined),
-                            ),
-                            label: "Profile")
-                      ])
-                : BottomNavigationBar(
-                    selectedItemColor: const Color.fromARGB(255, 218, 218, 218),
-                    unselectedItemColor: const Color.fromARGB(159, 16, 175, 53),
-                    items: [
-                        BottomNavigationBarItem(
+              )
+            ],
+            toolbarHeight: 100,
+            backgroundColor: const Color(0xFF008080),
+          ),
+          backgroundColor: Colors.white,
+          bottomNavigationBar: BottomNavigationBar(
+            selectedItemColor: Colors.white,
+            unselectedItemColor: role == "Admin"
+                ? const Color(0xFF008080)
+                : const Color.fromARGB(159, 16, 175, 53),
+            backgroundColor:
+                role == "Admin" ? const Color(0xFF008080) : Colors.white,
+            items: [
+              BottomNavigationBarItem(
+                icon: IconButton(
+                  onPressed: () {
+                    // Home page logic
+                  },
+                  icon: const Icon(Icons.home),
+                ),
+                label: "Home",
+              ),
+              BottomNavigationBarItem(
+                icon: IconButton(
+                  onPressed: () {
+                    if (role == "Admin") {
+                      Navigator.pushNamed(context, "create_trail");
+                    }
+                    // You can handle user differently if needed
+                  },
+                  icon: Icon(role == "Admin"
+                      ? Icons.edit_location_sharp
+                      : Icons.hiking),
+                ),
+                label: "Trail Nearby",
+              ),
+              if (role != "Admin")
+                BottomNavigationBarItem(
+                  icon: IconButton(
+                    icon: const Icon(Icons.star),
+                    onPressed: () {
+                      // Favorites page
+                    },
+                  ),
+                  label: "Favorites",
+                ),
+              BottomNavigationBarItem(
+                icon: IconButton(
+                  icon: const Icon(Icons.person_2_outlined),
+                  onPressed: () {
+                    Navigator.pushNamed(context, "profile");
+                  },
+                ),
+                label: "Profile",
+              ),
+            ],
+          ),
+          body: BlocBuilder<HomeBloc, HomeState>(
+            builder: (context, state) {
+              if (state is GetAllTrailEmpty) {
+                return Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Image(
+                        image: AssetImage("assets/No_Data.png"),
+                        height: 300,
+                      ),
+                      const Gap(10),
+                      const Text("No Trails Found"),
+                      const Gap(10),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFF008080),
-                          icon: IconButton(
-                            onPressed: () => {
-                              //   Navigator.pushReplacementNamed(context, ""),
-                            },
-                            icon: const Icon(Icons.home),
-                          ),
-                          label: "Home",
                         ),
-                        BottomNavigationBarItem(
-                          icon: IconButton(
-                            icon: const Icon(Icons.hiking),
-                            onPressed: () => {
-                              // Navigator.popAndPushNamed(context, ""),
-                            },
-                          ),
-                          label: "Trail Nearby",
-                        ),
-                        BottomNavigationBarItem(
-                            icon: IconButton(
-                              icon: const Icon(Icons.star),
-                              onPressed: () {
-                                //Navigator.popAndPushNamed(context, "");
-                              },
-                            ),
-                            label: "Favorities"),
-                        BottomNavigationBarItem(
-                            icon: IconButton(
-                              onPressed: () {
-                                Navigator.pushNamed(context, "profile");
-                              },
-                              icon: const Icon(Icons.person_2_outlined),
-                            ),
-                            label: "Profile")
-                      ]),
-            body: BlocBuilder<HomeBloc, HomeState>(
-              builder: (context, state) {
-                if (state is GetAllTrailEmpty) {
-                  return Center(
-                    child: Column(
-                      children: [
-                        const Image(
-                          image: AssetImage("assets/No_Data.png"),
-                          height: 350,
-                          width: 350,
-                        ),
-                        const Gap(10),
-                        const Text("No Trials Data to fetch"),
-                        const Gap(10),
-                        ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll(
-                              Color(0xFF008080),
-                            ),
-                          ),
-                          onPressed: () {
-                            toastification.show(
-                              context: context,
-                              type: ToastificationType.info,
-                              title: const Text(
-                                  'Please Wait We Are Fetching Data 🌐🗄️.'),
-                              style: ToastificationStyle.minimal,
-                              autoCloseDuration: const Duration(seconds: 5),
-                            );
-                            context.read<HomeBloc>().add(GetAllTrailsEvent());
-                          },
-                          child: const Text(
-                            "Try Again",
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ],
-                    ),
-                  );
-                }
-                if (state is GetAllTrialSucess) {
-                  return GridView.builder(
-                      itemCount: state.fetchedData.length,
-                      gridDelegate:
-                          const SliverGridDelegateWithFixedCrossAxisCount(
-                              crossAxisCount: 2),
-                      itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.all(5),
-                          child: role != "Admin"
-                              ? Usercard(
-                                  data: state.fetchedData[index],
-                                  homeBloc: homeBloc)
-                              : TrailCard(
-                                  homeBloc: homeBloc,
-                                  data: state.fetchedData[index],
-                                ),
-                        );
-                      });
-                }
-                if (state is GetAllTrialFailure) {
-                  return Center(
-                    child: Column(
-                      children: [
-                        const Image(
-                          image: AssetImage("assets/Server_Error.png"),
-                          height: 350,
-                          width: 350,
-                        ),
-                        ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor: WidgetStatePropertyAll(
-                              Color.fromRGBO(0, 128, 128, 1),
-                            ),
-                          ),
-                          onPressed: () {
-                            toastification.show(
-                              context: context,
-                              type: ToastificationType.info,
-                              title: const Text(
-                                  'Please Wait We Are Fetching Data 🌐🗄️.'),
-                              style: ToastificationStyle.minimal,
-                              autoCloseDuration: const Duration(seconds: 5),
-                            );
-                            context.read<HomeBloc>().add(GetAllTrailsEvent());
-                          },
-                          child: const Text(
-                            "Try Again",
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ],
-                    ),
-                  );
-                }
-                return const Center(
-                  child: CircularProgressIndicator(
-                    color: Colors.grey,
+                        onPressed: () {
+                          toastification.show(
+                            context: context,
+                            type: ToastificationType.info,
+                            title:
+                                const Text('Fetching data. Please wait 🌐🗄️'),
+                            style: ToastificationStyle.minimal,
+                            autoCloseDuration: const Duration(seconds: 5),
+                          );
+                          homeBloc.add(GetAllTrailsEvent());
+                        },
+                        child: const Text("Try Again",
+                            style: TextStyle(color: Colors.white)),
+                      ),
+                    ],
                   ),
                 );
-              },
-            ),
-          );
-        });
+              }
+
+              if (state is GetAllTrialSucess) {
+                return GridView.builder(
+                  padding: const EdgeInsets.all(8),
+                  itemCount: state.fetchedData.length,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 10,
+                    crossAxisSpacing: 10,
+                    childAspectRatio: 0.85,
+                  ),
+                  itemBuilder: (context, index) {
+                    final data = state.fetchedData[index];
+                    return role != "Admin"
+                        ? Usercard(data: data, homeBloc: homeBloc)
+                        : TrailCard(data: data, homeBloc: homeBloc);
+                  },
+                );
+              }
+
+              if (state is GetAllTrialFailure) {
+                return Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Image(
+                        image: AssetImage("assets/Server_Error.png"),
+                        height: 300,
+                      ),
+                      const Gap(10),
+                      const Text("Server error occurred."),
+                      const Gap(10),
+                      ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFF008080),
+                        ),
+                        onPressed: () {
+                          toastification.show(
+                            context: context,
+                            type: ToastificationType.info,
+                            title:
+                                const Text('Retrying to fetch data 🌐🗄️...'),
+                            style: ToastificationStyle.minimal,
+                            autoCloseDuration: const Duration(seconds: 5),
+                          );
+                          homeBloc.add(GetAllTrailsEvent());
+                        },
+                        child: const Text("Try Again",
+                            style: TextStyle(color: Colors.white)),
+                      ),
+                    ],
+                  ),
+                );
+              }
+
+              return const Center(
+                child: CircularProgressIndicator(color: Colors.grey),
+              );
+            },
+          ),
+        );
+      },
+    );
   }
 }
 
-class MySeachDelegate extends SearchDelegate {
+class MySearchDelegate extends SearchDelegate {
+  final List<String> suggestions = [
+    "Everest Trail",
+    "Manaslu Trail",
+    "Annapurna Circuit",
+    "Langtang Valley",
+    "IIC"
+  ];
+
   @override
   List<Widget>? buildActions(BuildContext context) {
     return [
@@ -276,35 +258,37 @@ class MySeachDelegate extends SearchDelegate {
   @override
   Widget? buildLeading(BuildContext context) {
     return IconButton(
-        onPressed: () => close(context, null),
-        icon: const Icon(Icons.arrow_back));
+      onPressed: () => close(context, null),
+      icon: const Icon(Icons.arrow_back),
+    );
   }
 
   @override
   Widget buildResults(BuildContext context) {
-    // TODO: implement buildResults
-    throw UnimplementedError();
+    
+    return Center(
+       : Text("Search result for \"$query\""),
+    );
   }
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    List<String> buildSuggestions = ["Everest Trail", "Manaslu Trail"];
-    return Theme(
-      data: ThemeData(
-          scaffoldBackgroundColor: const Color.fromARGB(255, 226, 138, 138)),
-      child: ListView.builder(
-          itemCount: buildSuggestions.length,
-          itemBuilder: (context, index) {
-            String suggestion = buildSuggestions[index];
-            return ListTile(
-              splashColor: const Color.fromARGB(255, 224, 224, 224),
-              style: ListTileStyle.list,
-              title: Text(suggestion),
-              onTap: () {
-                query = suggestion;
-              },
-            );
-          }),
+    List<String> filteredSuggestions = suggestions
+        .where((s) => s.toLowerCase().contains(query.toLowerCase()))
+        .toList();
+
+    return ListView.builder(
+      itemCount: filteredSuggestions.length,
+      itemBuilder: (context, index) {
+        final suggestion = filteredSuggestions[index];
+        return ListTile(
+          title: Text(suggestion),
+          onTap: () {
+            query = suggestion;
+            showResults(context);
+          },
+        );
+      },
     );
   }
 }

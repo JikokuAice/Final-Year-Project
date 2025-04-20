@@ -36,7 +36,7 @@ class TravelDataSourceImp extends TravelDataSource {
           "timeElapsed": model.timeElapsed,
           "activityDate": "2025-03-28T06:05:59.027Z",
           "trailId": model.trailId,
-          "userId": 14
+          "userId": model.userId
         }
       },
     );

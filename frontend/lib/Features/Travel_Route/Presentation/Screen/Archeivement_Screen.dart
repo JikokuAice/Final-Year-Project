@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:frontend/Features/Home/Presentation/Page/Home.dart";
 import "package:gap/gap.dart";
 
 class ArcheivementScreen extends StatefulWidget {
@@ -98,9 +99,13 @@ class _ArcheivementScreenState extends State<ArcheivementScreen> {
           const Gap(30),
           ElevatedButton(
               onPressed: () {
-                Navigator.pushReplacementNamed(context, "");
+                Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (context) => Home()),
+                  (Route<dynamic> route) => false,
+                );
               },
-              child: Text("Proceed"))
+              child: const Text("Proceed"))
         ],
       ),
     );

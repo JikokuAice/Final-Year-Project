@@ -31,105 +31,196 @@ class _ProfileScreenState extends State<ProfileScreen> {
       builder: (context, state) {
         if (state is UserActivityFetchedSuccess) {
           return Scaffold(
-            backgroundColor: const Color.fromARGB(255, 231, 231, 231),
+            backgroundColor: const Color(0xFFE7E7E7),
             appBar: AppBar(
-              backgroundColor: const Color.fromARGB(255, 231, 231, 231),
-            ),
-            body: Column(
-              children: [
-                GestureDetector(
-                  onTap: () {
-                    logout();
-                    Navigator.popAndPushNamed(context, "login");
+              leading: IconButton(
+                  onPressed: () {
+                    Navigator.pop(context);
                   },
-                  child: const Row(
-                    children: [
-                      Text(
-                        "Log Out",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w600, fontSize: 18),
-                      ),
-                      Gap(10),
-                      Icon(Icons.logout)
-                    ],
+                  icon: const Icon(Icons.arrow_back)),
+              elevation: 0,
+              backgroundColor: Colors.transparent,
+              automaticallyImplyLeading: false,
+              title: const Text(
+                "My Profile",
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+              ),
+              centerTitle: true,
+            ),
+            body: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const CircleAvatar(
+                    radius: 40,
+                    backgroundColor: Colors.blueAccent,
+                    child: Icon(Icons.person, size: 50, color: Colors.white),
                   ),
-                ),
-                const Divider(
-                  color: Colors.grey,
-                  thickness: 2,
-                ),
-                const Text(
-                  "USER ACTIVITY",
-                  style: TextStyle(
-                      fontSize: 20,
+                  const SizedBox(height: 12),
+                  const Text(
+                    "Ayush Karki", // Replace with dynamic value if available
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                  const Text(
+                    "ayush@example.com", // Replace with dynamic value if available
+                    style: TextStyle(fontSize: 16, color: Colors.grey),
+                  ),
+                  const SizedBox(height: 10),
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      logout();
+                      Navigator.popAndPushNamed(context, "login");
+                    },
+                    icon: const Icon(Icons.logout),
+                    label: const Text("Logout"),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.redAccent,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 12),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  const Divider(thickness: 2, color: Colors.grey),
+                  const Text(
+                    "USER ACTIVITY",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
                       fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.w600),
-                ),
-                const Divider(
-                  color: Colors.grey,
-                  thickness: 2,
-                ),
-                Expanded(
-                    child: ListView.builder(
+                    ),
+                  ),
+                  const Divider(thickness: 2, color: Colors.grey),
+                  const SizedBox(height: 10),
+                  if (state is UserActivityFetchedSuccess)
+                    Expanded(
+                      child: ListView.builder(
                         itemCount: state.userActivity.length,
-                        itemBuilder: (context, int i) {
+                        itemBuilder: (context, i) {
+                          final activity = state.userActivity[i];
                           return UserActivityCard(
-                            trailType: state.userActivity[i]!.trailType,
-                            trailName: state.userActivity[i]!.trailName,
-                            activityDate: state.userActivity[i]!.activityDate,
-                            distanceCovered:
-                                state.userActivity[i]!.distanceCovered,
-                            image: state.userActivity[i]!.images,
-                            location: state.userActivity[i]!.location,
-                            avgSpeed: state.userActivity[i]!.avgSpeed,
-                            difficulty: state.userActivity[i]!.difficulty,
-                            timeElapsed: state.userActivity[i]!.timeElapsed,
+                            trailType: activity!.trailType,
+                            trailName: activity.trailName,
+                            activityDate: activity.activityDate,
+                            distanceCovered: activity.distanceCovered,
+                            image: activity.images,
+                            location: activity.location,
+                            avgSpeed: activity.avgSpeed,
+                            difficulty: activity.difficulty,
+                            timeElapsed: activity.timeElapsed,
                           );
-                        }))
-              ],
+                        },
+                      ),
+                    )
+                  else
+                    const Padding(
+                      padding: EdgeInsets.all(20),
+                      child: CircularProgressIndicator(),
+                    )
+                ],
+              ),
             ),
           );
         } else {
           return Scaffold(
-            backgroundColor: const Color.fromARGB(255, 231, 231, 231),
+            backgroundColor: const Color(0xFFE7E7E7),
             appBar: AppBar(
-              backgroundColor: const Color.fromARGB(255, 231, 231, 231),
-            ),
-            body: Column(
-              children: [
-                GestureDetector(
-                  onTap: () {
-                    logout();
-                    Navigator.popAndPushNamed(context, "login");
+              leading: IconButton(
+                  onPressed: () {
+                    Navigator.pop(context);
                   },
-                  child: const Row(
-                    children: [
-                      Text(
-                        "Log Out",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w600, fontSize: 18),
-                      ),
-                      Gap(10),
-                      Icon(Icons.logout)
-                    ],
+                  icon: const Icon(Icons.arrow_back)),
+              elevation: 0,
+              backgroundColor: Colors.transparent,
+              automaticallyImplyLeading: false,
+              title: const Text(
+                "My Profile",
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+              ),
+              centerTitle: true,
+            ),
+            body: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const CircleAvatar(
+                    radius: 40,
+                    backgroundColor: Colors.blueAccent,
+                    child: Icon(Icons.person, size: 50, color: Colors.white),
                   ),
-                ),
-                const Divider(
-                  color: Colors.grey,
-                  thickness: 2,
-                ),
-                const Text(
-                  "USER ACTIVITY",
-                  style: TextStyle(
-                      fontSize: 20,
+                  const SizedBox(height: 12),
+                  const Text(
+                    "Ayush Karki", // Replace with dynamic value if available
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                  const Text(
+                    "ayush@example.com", // Replace with dynamic value if available
+                    style: TextStyle(fontSize: 16, color: Colors.grey),
+                  ),
+                  const SizedBox(height: 10),
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      logout();
+                      Navigator.popAndPushNamed(context, "login");
+                    },
+                    icon: const Icon(Icons.logout),
+                    label: const Text("Logout"),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.redAccent,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 12),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  const Divider(thickness: 2, color: Colors.grey),
+                  const Text(
+                    "USER ACTIVITY",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
                       fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.w600),
-                ),
-                const Divider(
-                  color: Colors.grey,
-                  thickness: 2,
-                ),
-              ],
+                    ),
+                  ),
+                  const Divider(thickness: 2, color: Colors.grey),
+                  const SizedBox(height: 10),
+                  if (state is UserActivityFetchedSuccess)
+                    Expanded(
+                      child: ListView.builder(
+                        itemCount: state.userActivity.length,
+                        itemBuilder: (context, i) {
+                          final activity = state.userActivity[i];
+                          return UserActivityCard(
+                            trailType: activity!.trailType,
+                            trailName: activity.trailName,
+                            activityDate: activity.activityDate,
+                            distanceCovered: activity.distanceCovered,
+                            image: activity.images,
+                            location: activity.location,
+                            avgSpeed: activity.avgSpeed,
+                            difficulty: activity.difficulty,
+                            timeElapsed: activity.timeElapsed,
+                          );
+                        },
+                      ),
+                    )
+                  else
+                    const Padding(
+                      padding: EdgeInsets.all(20),
+                      child: CircularProgressIndicator(),
+                    )
+                ],
+              ),
             ),
           );
         }

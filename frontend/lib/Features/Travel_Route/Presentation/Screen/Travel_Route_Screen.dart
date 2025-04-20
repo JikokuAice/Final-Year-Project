@@ -6,7 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_map_math/flutter_geo_math.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:frontend/Features/Admin/Domain/entity/trail.dart';
-import 'package:frontend/Features/Admin/presentation/Bloc/admin_bloc.dart';
+
 import 'package:frontend/Features/Travel_Route/Domain/Entity/UserActivity_Entity.dart';
 import 'package:frontend/Features/Travel_Route/Presentation/Screen/Archeivement_Screen.dart';
 import 'package:frontend/Features/Travel_Route/Presentation/bloc/navigation_bloc.dart';
@@ -28,6 +28,7 @@ class _TravelRouteScreenState extends State<TravelRouteScreen> {
   Logger log = Logger();
   final Completer<GoogleMapController> _controller =
       Completer<GoogleMapController>();
+  String userId = "";
 
   LatLng? _destination;
   LatLng? _startPoint;
@@ -67,6 +68,7 @@ class _TravelRouteScreenState extends State<TravelRouteScreen> {
 
   @override
   void initState() {
+    getUserId();
     geticon();
     updatePosition();
     _travelBloc = BlocProvider.of<NavigationBloc>(context);
@@ -365,11 +367,8 @@ class _TravelRouteScreenState extends State<TravelRouteScreen> {
 
         var hikeCompleted =
             checkUserCompletedHiking(userPosition, _destination!);
-
+        int userdata = int.parse(userId);
         if (hikeCompleted) {
-          SharedPreferencesAsync pref = SharedPreferencesAsync();
-          var userId = pref.getString("");
-
           _stopwatch.stop();
           _travelBloc.add(AddUserActivityEvent(
               useractivityEntity: UseractivityEntity(
@@ -377,7 +376,7 @@ class _TravelRouteScreenState extends State<TravelRouteScreen> {
                   trailName: state.entity.mapName ?? "no name",
                   avgSpeed: speed.toString(),
                   distanceCovered: distanceCovered.toStringAsFixed(1),
-                  userId: 14,
+                  userId: int.parse(userId),
                   trailId: widget.id!)));
 
           Navigator.pushReplacement(
@@ -576,5 +575,12 @@ class _TravelRouteScreenState extends State<TravelRouteScreen> {
     var location = await Geolocator.getCurrentPosition();
 
     return location;
+  }
+
+  Future<void> getUserId() async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    setState(() {
+      userId = pref.getString("pId")!;
+    });
   }
 }
