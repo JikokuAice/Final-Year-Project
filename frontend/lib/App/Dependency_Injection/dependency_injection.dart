@@ -38,6 +38,9 @@ import 'package:frontend/Features/Travel_Route/Presentation/bloc/navigation_bloc
 import 'package:get_it/get_it.dart';
 import 'package:logger/logger.dart';
 
+
+
+
 final sl = GetIt.instance;
 
 void init() {
@@ -45,10 +48,15 @@ void init() {
   var dio = createDio(baseUrl: "https://f55d-103-166-101-79.ngrok-free.app");
   sl.registerLazySingleton<Dio>(() => dio);
 
+
+  
 //Logger Config
   var logger = Logger();
   sl.registerLazySingleton<Logger>(() => logger);
 
+
+
+  
 //Data source Config
   sl.registerLazySingleton<AuthRemoteDataSource>(
       () => AuthRemoteDataSourceImp(sl<Dio>(), sl<Logger>()));
@@ -61,6 +69,10 @@ void init() {
   sl.registerLazySingleton<ProfileDataSource>(
       () => ProfileDataSourceImp(sl<Dio>(), sl<Logger>()));
 
+
+
+
+  
 //Repositories
   sl.registerLazySingleton<AuthRepo>(
       () => AuthRepoImp(authRemoteDataSource: sl<AuthRemoteDataSource>()));
@@ -75,6 +87,10 @@ void init() {
   sl.registerLazySingleton<ProfileDomainRepository>(
       () => ProfileRepoImp(sl<ProfileDataSource>()));
 
+
+
+
+  
 //Usecases
   sl.registerLazySingleton(
     () => RegisterUsecase(
@@ -149,6 +165,9 @@ void init() {
     ),
   );
 
+
+
+  
 //bloc
   sl.registerFactory(
     () => AuthBloc(
