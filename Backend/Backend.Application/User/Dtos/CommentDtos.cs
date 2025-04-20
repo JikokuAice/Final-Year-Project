@@ -18,10 +18,12 @@ namespace Backend.Application.User.Dtos
       
         public int TrailId { get; set; }
 
+     
 
         public Comments ConvertFromDtos(InfraCommentDtos commentDtos)
         {
             return new Comments
+
             {
                 TrailId=commentDtos.TrailId,
                 UserId=commentDtos.UserId,  

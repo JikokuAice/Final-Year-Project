@@ -162,7 +162,7 @@ namespace Backend.Controllers
             var result = await _mediator.Send(query);
 
             return Ok(result);
-
+            
         }
 
 
@@ -221,7 +221,6 @@ namespace Backend.Controllers
             }
 
             return Ok($"Comment with Id : {commentId} upadted sucessfully");
-
 
         }
 

@@ -80,18 +80,18 @@ namespace Backend.Infrasturcture.UserRepo
         public  async Task<Trail> GetSpecificTrail(int Id)
         {
             var trailResult = await _db.Trails.FindAsync(Id);
-            var map = await _db.Maps.FindAsync(trailResult!.MapId);
+            var map = await _db.Maps.FirstOrDefaultAsync(e=>e.Id==trailResult!.MapId);
 
             return trailResult;
         }
 
         public async Task<List<CommentDtos>> GetTrailComments(int trailId)
         {
-            var trailComments = await _db.Comments.Include(e=>e.User).Where(e=>e.TrailId==trailId).Select(e=>new CommentDtos { CommentText=e.CommentText,
-Id=e.Id,
-likes=e.likes,
-UserId=e.UserId,
-User=new UserDtos
+            var trailComments = await _db.Comments.Include(e=>e.User).Where(e=>e.TrailId==trailId).Select(e=>new CommentDtos { CommentText=e.CommentText,createdAt=e.createdAt,
+               Id=e.Id,
+               likes=e.likes,
+               UserId=e.UserId,
+               User=new UserDtos
 {
     Image=e.User!.Image,
     Name=e.User.Name

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PWLR+CLTJwBtUrlD95VlUImaQDseVKXqA8ZgOOg1JzQ=",
+  "Hash": "4+nL508FVmk/Y9Yki1pFu1f2jiP2PT+HFsE2CSfrG9M=",
   "Source": "Backend",
   "BasePath": "_content/Backend",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\IIC_0.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\wwwroot\\uploads\\near route_0.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "uploads/near route_0.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\near route_0.jpg"
     },
     {
       "Identity": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\wwwroot\\uploads\\pika_0.jpg",

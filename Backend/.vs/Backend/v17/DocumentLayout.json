@@ -3,8 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ayush\\source\\repos\\NepaliDonationApp\\NepaliDonationApp\\Controllers\\DonarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ayush\\source\\repos\\NepaliDonationApp\\NepaliDonationApp\\Models\\Donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\commands\\adduseractivity\\addactivitycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\commands\\adduseractivity\\addactivitycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F340D478-3EA8-4CFD-BDE7-278F4331A64E}|Backend\\Backend.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F340D478-3EA8-4CFD-BDE7-278F4331A64E}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\dtos\\useractivitiesdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\dtos\\useractivitiesdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\commands\\adduseractivity\\addactitvitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\commands\\adduseractivity\\addactitvitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F8D7120-BECC-4539-9B14-8A19EEA836B4}|Backend.Infrastructure\\Backend.Infrastructure.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.infrastructure\\userrepo\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,32 +33,104 @@
       "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\repository\\iuserreposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\commands\\updatecomment\\updatecommentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\commands\\updatecomment\\updatecommentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F8D7120-BECC-4539-9B14-8A19EEA836B4}|Backend.Infrastructure\\Backend.Infrastructure.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.infrastructure\\services\\authenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F8D7120-BECC-4539-9B14-8A19EEA836B4}|Backend.Infrastructure\\Backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\services\\authenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\commands\\updatecomment\\updatecommentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\commands\\updatecomment\\updatecommentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\entity\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entity\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\commands\\addcomment\\addcommentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\commands\\addcomment\\addcommentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\repository\\authenticationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\repository\\authenticationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\authentication\\command\\loginuser\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\authentication\\command\\loginuser\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\authentication\\command\\loginuser\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\authentication\\command\\loginuser\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\entity\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entity\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F340D478-3EA8-4CFD-BDE7-278F4331A64E}|Backend\\Backend.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F340D478-3EA8-4CFD-BDE7-278F4331A64E}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\dtos\\commentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\dtos\\commentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F8D7120-BECC-4539-9B14-8A19EEA836B4}|Backend.Infrastructure\\Backend.Infrastructure.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.infrastructure\\authrepo\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F8D7120-BECC-4539-9B14-8A19EEA836B4}|Backend.Infrastructure\\Backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\authrepo\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\repository\\iadminreposervices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\repository\\iadminreposervices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\entity\\commentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entity\\commentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\commands\\updatecomment\\updatecommentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\commands\\updatecomment\\updatecommentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\gettrailcomments\\gettrailcommentquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\query\\gettrailcomments\\gettrailcommentquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F340D478-3EA8-4CFD-BDE7-278F4331A64E}|Backend\\Backend.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F340D478-3EA8-4CFD-BDE7-278F4331A64E}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\getuseractivity\\getuseractivityquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\query\\getuseractivity\\getuseractivityquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\getspecifictraildetail\\getspecifictrailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\query\\getspecifictraildetail\\getspecifictrailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\getspecificmapdetail\\getspecificmapdetailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\query\\getspecificmapdetail\\getspecificmapdetailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\getalltrails\\getalltrailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\query\\getalltrails\\getalltrailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\entity\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entity\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\dtos\\commentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\dtos\\commentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Migrations\\20250411103959_Adding Comment Date.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend.Infrastructure\\Migrations\\20250411103959_Adding Comment Date.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\entity\\trail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entity\\trail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\getspecifictraildetail\\getspecifictrailqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\query\\getspecifictraildetail\\getspecifictrailqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\commands\\updatecomment\\updatecommentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\commands\\updatecomment\\updatecommentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\commands\\addcomment\\addcommentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\commands\\addcomment\\addcommentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\repository\\iadminreposervices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\repository\\iadminreposervices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\commands\\addcomment\\addcommentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,14 +139,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\entity\\updatecommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entity\\updatecommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\entity\\commentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entity\\commentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\commands\\adduseractivity\\addactitvitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\commands\\adduseractivity\\addactitvitycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\commands\\deletecomment\\deletecommentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,80 +161,20 @@
       "RelativeMoniker": "D:0:0:{5F8D7120-BECC-4539-9B14-8A19EEA836B4}|Backend.Infrastructure\\Backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\adminrepo\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F8D7120-BECC-4539-9B14-8A19EEA836B4}|Backend.Infrastructure\\Backend.Infrastructure.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.infrastructure\\authrepo\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F8D7120-BECC-4539-9B14-8A19EEA836B4}|Backend.Infrastructure\\Backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\authrepo\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F8D7120-BECC-4539-9B14-8A19EEA836B4}|Backend.Infrastructure\\Backend.Infrastructure.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.infrastructure\\services\\authenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F8D7120-BECC-4539-9B14-8A19EEA836B4}|Backend.Infrastructure\\Backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\services\\authenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\gettrailcomments\\gettrailcommentqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\query\\gettrailcomments\\gettrailcommentqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\gettrailcomments\\gettrailcommentquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\query\\gettrailcomments\\gettrailcommentquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\entity\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entity\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\entity\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entity\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\getuseractivity\\getuseractivityquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\query\\getuseractivity\\getuseractivityquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\entity\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entity\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F340D478-3EA8-4CFD-BDE7-278F4331A64E}|Backend\\Backend.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F340D478-3EA8-4CFD-BDE7-278F4331A64E}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\commands\\adduseractivity\\addactivitycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\commands\\adduseractivity\\addactivitycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\getspecifictraildetail\\getspecifictrailqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\query\\getspecifictraildetail\\getspecifictrailqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\getspecifictraildetail\\getspecifictrailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\query\\getspecifictraildetail\\getspecifictrailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\getspecificmapdetail\\getspecificmapdetailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\query\\getspecificmapdetail\\getspecificmapdetailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\getalltrails\\getalltrailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\query\\getalltrails\\getalltrailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\getalltrails\\getalltrailqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\query\\getalltrails\\getalltrailqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\repository\\authenticationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\repository\\authenticationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\entity\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entity\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.domain\\entity\\trail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3EE8510-01F0-4E3D-9B39-0EBFF7DA5FB6}|Backend.Domain\\Backend.Domain.csproj|solutionrelative:backend.domain\\entity\\trail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\query\\getspecificmapdetail\\getspecificmapdetailqueryhanlder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -193,10 +215,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F340D478-3EA8-4CFD-BDE7-278F4331A64E}|Backend\\Backend.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F340D478-3EA8-4CFD-BDE7-278F4331A64E}|Backend\\Backend.csproj|solutionrelative:backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\user\\dtos\\useractivitiesdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|solutionrelative:backend.application\\user\\dtos\\useractivitiesdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB40EF66-25F1-4960-BEE2-7796FB67C0DC}|Backend.Application\\Backend.Application.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.application\\admin\\command\\createtrail\\createtrailcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -265,6 +283,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{5F8D7120-BECC-4539-9B14-8A19EEA836B4}|Backend.Infrastructure\\Backend.Infrastructure.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.infrastructure\\migrations\\20250407093325_added comment entity with relation with trail and user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F8D7120-BECC-4539-9B14-8A19EEA836B4}|Backend.Infrastructure\\Backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\migrations\\20250407093325_added comment entity with relation with trail and user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F8D7120-BECC-4539-9B14-8A19EEA836B4}|Backend.Infrastructure\\Backend.Infrastructure.csproj|c:\\users\\ayush\\music\\final-year-project\\backend\\backend.infrastructure\\migrations\\20250411104154_adding comment date.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F8D7120-BECC-4539-9B14-8A19EEA836B4}|Backend.Infrastructure\\Backend.Infrastructure.csproj|solutionrelative:backend.infrastructure\\migrations\\20250411104154_adding comment date.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -291,400 +313,139 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Backend\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Backend\\Controllers\\UserController.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAA/wEQAAAAAAAAA",
+              "Title": "DonarController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\source\\repos\\NepaliDonationApp\\NepaliDonationApp\\Controllers\\DonarController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\NepaliDonationApp\\NepaliDonationApp\\Controllers\\DonarController.cs",
+              "ToolTip": "C:\\Users\\Ayush\\source\\repos\\NepaliDonationApp\\NepaliDonationApp\\Controllers\\DonarController.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\NepaliDonationApp\\NepaliDonationApp\\Controllers\\DonarController.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAABwAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T15:39:21.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddCommentCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\AddComment\\AddCommentCommandHandler.cs",
-              "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\AddComment\\AddCommentCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\AddComment\\AddCommentCommandHandler.cs",
-              "RelativeToolTip": "Backend.Application\\User\\Commands\\AddComment\\AddCommentCommandHandler.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAqwB4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T10:57:37.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateCommentCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommand.cs",
-              "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommand.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommand.cs",
-              "RelativeToolTip": "Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T05:50:33.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateCommentCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommandHandler.cs",
-              "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommandHandler.cs",
-              "RelativeToolTip": "Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBUAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T05:50:47.562Z",
+              "WhenOpened": "2025-04-20T03:57:27.627Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\UserRepo\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Backend.Infrastructure\\UserRepo\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\UserRepo\\UserRepository.cs",
-              "RelativeToolTip": "Backend.Infrastructure\\UserRepo\\UserRepository.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAwwHQAAAAYAAAA",
+              "Title": "Donation.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\source\\repos\\NepaliDonationApp\\NepaliDonationApp\\Models\\Donation.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\NepaliDonationApp\\NepaliDonationApp\\Models\\Donation.cs",
+              "ToolTip": "C:\\Users\\Ayush\\source\\repos\\NepaliDonationApp\\NepaliDonationApp\\Models\\Donation.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\NepaliDonationApp\\NepaliDonationApp\\Models\\Donation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T08:10:23.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IUserRepoService.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Repository\\IUserRepoService.cs",
-              "RelativeDocumentMoniker": "Backend.Domain\\Repository\\IUserRepoService.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Repository\\IUserRepoService.cs",
-              "RelativeToolTip": "Backend.Domain\\Repository\\IUserRepoService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBYAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T08:09:48.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Backend\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Backend\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwDAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T15:29:43.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CommentDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Dtos\\CommentDtos.cs",
-              "RelativeDocumentMoniker": "Backend.Application\\User\\Dtos\\CommentDtos.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Dtos\\CommentDtos.cs",
-              "RelativeToolTip": "Backend.Application\\User\\Dtos\\CommentDtos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAkwBQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T09:12:36.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IAdminRepoServices.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Repository\\IAdminRepoServices.cs",
-              "RelativeDocumentMoniker": "Backend.Domain\\Repository\\IAdminRepoServices.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Repository\\IAdminRepoServices.cs",
-              "RelativeToolTip": "Backend.Domain\\Repository\\IAdminRepoServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T10:43:51.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AddActitvityCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\AddUserActivity\\AddActitvityCommand.cs",
-              "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\AddUserActivity\\AddActitvityCommand.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\AddUserActivity\\AddActitvityCommand.cs",
-              "RelativeToolTip": "Backend.Application\\User\\Commands\\AddUserActivity\\AddActitvityCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T11:22:55.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AddCommentCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\AddComment\\AddCommentCommand.cs",
-              "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\AddComment\\AddCommentCommand.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\AddComment\\AddCommentCommand.cs",
-              "RelativeToolTip": "Backend.Application\\User\\Commands\\AddComment\\AddCommentCommand.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAuwA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T10:57:24.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Backend\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Backend\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAcwHgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T08:07:33.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CommentDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\CommentDtos.cs",
-              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\CommentDtos.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\CommentDtos.cs",
-              "RelativeToolTip": "Backend.Domain\\Entity\\CommentDtos.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T14:55:17.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UpdateCommentDto.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\UpdateCommentDto.cs",
-              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\UpdateCommentDto.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\UpdateCommentDto.cs",
-              "RelativeToolTip": "Backend.Domain\\Entity\\UpdateCommentDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T05:47:07.199Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DeleteCommentCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommandHandler.cs",
-              "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommandHandler.cs",
-              "RelativeToolTip": "Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:09:30.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ServiceCollectionExtension.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
-              "RelativeDocumentMoniker": "Backend.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
-              "RelativeToolTip": "Backend.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAwCcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T05:01:23.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T03:37:51.235Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\AppContext\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Backend.Infrastructure\\AppContext\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\AppContext\\AppDbContext.cs",
-              "RelativeToolTip": "Backend.Infrastructure\\AppContext\\AppDbContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T08:10:18.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DeleteCommentCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommand.cs",
-              "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommand.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommand.cs",
-              "RelativeToolTip": "Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:09:14.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AdminRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\AdminRepo\\AdminRepository.cs",
-              "RelativeDocumentMoniker": "Backend.Infrastructure\\AdminRepo\\AdminRepository.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\AdminRepo\\AdminRepository.cs",
-              "RelativeToolTip": "Backend.Infrastructure\\AdminRepo\\AdminRepository.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBwAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T08:10:45.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "AuthRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\AuthRepo\\AuthRepository.cs",
               "RelativeDocumentMoniker": "Backend.Infrastructure\\AuthRepo\\AuthRepository.cs",
               "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\AuthRepo\\AuthRepository.cs",
               "RelativeToolTip": "Backend.Infrastructure\\AuthRepo\\AuthRepository.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAA1wB8AAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T05:32:06.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T05:32:06.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AuthenticationServices.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Services\\AuthenticationServices.cs",
-              "RelativeDocumentMoniker": "Backend.Infrastructure\\Services\\AuthenticationServices.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Services\\AuthenticationServices.cs",
-              "RelativeToolTip": "Backend.Infrastructure\\Services\\AuthenticationServices.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAgwEsAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T08:10:20.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "GetTraiLCommentQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetTrailComments\\GetTraiLCommentQueryHandler.cs",
-              "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetTrailComments\\GetTraiLCommentQueryHandler.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetTrailComments\\GetTraiLCommentQueryHandler.cs",
-              "RelativeToolTip": "Backend.Application\\User\\Query\\GetTrailComments\\GetTraiLCommentQueryHandler.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAowBAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T10:04:50.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "GetTrailCommentQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetTrailComments\\GetTrailCommentQuery.cs",
-              "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetTrailComments\\GetTrailCommentQuery.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetTrailComments\\GetTrailCommentQuery.cs",
-              "RelativeToolTip": "Backend.Application\\User\\Query\\GetTrailComments\\GetTrailCommentQuery.cs",
+              "DocumentIndex": 12,
+              "Title": "LoginUserCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\Authentication\\Command\\LoginUser\\LoginUserCommand.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\Authentication\\Command\\LoginUser\\LoginUserCommand.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\Authentication\\Command\\LoginUser\\LoginUserCommand.cs",
+              "RelativeToolTip": "Backend.Application\\Authentication\\Command\\LoginUser\\LoginUserCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T10:04:34.32Z"
+              "WhenOpened": "2025-04-14T08:09:07.875Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Program.cs",
-              "RelativeDocumentMoniker": "Backend\\Program.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Program.cs",
-              "RelativeToolTip": "Backend\\Program.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAAACQAAAAzAAAA",
+              "DocumentIndex": 5,
+              "Title": "AddActitvityCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\AddUserActivity\\AddActitvityCommand.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\AddUserActivity\\AddActitvityCommand.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\AddUserActivity\\AddActitvityCommand.cs",
+              "RelativeToolTip": "Backend.Application\\User\\Commands\\AddUserActivity\\AddActitvityCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T10:50:24.846Z"
+              "WhenOpened": "2025-03-24T11:22:55.714Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "GetUserActivityQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetUserActivity\\GetUserActivityQuery.cs",
-              "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetUserActivity\\GetUserActivityQuery.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetUserActivity\\GetUserActivityQuery.cs",
-              "RelativeToolTip": "Backend.Application\\User\\Query\\GetUserActivity\\GetUserActivityQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T10:07:51.16Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Map.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Map.cs",
-              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\Map.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Map.cs",
-              "RelativeToolTip": "Backend.Domain\\Entity\\Map.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T10:38:42.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Comment.cs",
-              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\Comment.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Comment.cs",
-              "RelativeToolTip": "Backend.Domain\\Entity\\Comment.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T09:01:01.289Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UserDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\UserDtos.cs",
-              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\UserDtos.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\UserDtos.cs",
-              "RelativeToolTip": "Backend.Domain\\Entity\\UserDtos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T14:52:56.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\User.cs",
-              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\User.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\User.cs",
-              "RelativeToolTip": "Backend.Domain\\Entity\\User.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAAoAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T10:40:12.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 2,
               "Title": "AddActivityCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\AddUserActivity\\AddActivityCommandHandler.cs",
               "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\AddUserActivity\\AddActivityCommandHandler.cs",
               "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\AddUserActivity\\AddActivityCommandHandler.cs",
               "RelativeToolTip": "Backend.Application\\User\\Commands\\AddUserActivity\\AddActivityCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBcAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T11:23:07.587Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "GetSpecificTrailQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetSpecificTrailDetail\\GetSpecificTrailQueryHandler.cs",
-              "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetSpecificTrailDetail\\GetSpecificTrailQueryHandler.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetSpecificTrailDetail\\GetSpecificTrailQueryHandler.cs",
-              "RelativeToolTip": "Backend.Application\\User\\Query\\GetSpecificTrailDetail\\GetSpecificTrailQueryHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
+              "DocumentIndex": 7,
+              "Title": "IUserRepoService.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Repository\\IUserRepoService.cs",
+              "RelativeDocumentMoniker": "Backend.Domain\\Repository\\IUserRepoService.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Repository\\IUserRepoService.cs",
+              "RelativeToolTip": "Backend.Domain\\Repository\\IUserRepoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T08:06:31.086Z"
+              "WhenOpened": "2025-03-09T08:09:48.74Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 4,
+              "Title": "UserActivitiesDtos.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Dtos\\UserActivitiesDtos.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\User\\Dtos\\UserActivitiesDtos.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Dtos\\UserActivitiesDtos.cs",
+              "RelativeToolTip": "Backend.Application\\User\\Dtos\\UserActivitiesDtos.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T11:17:17.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\UserController.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAowEoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T15:39:21.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\UserRepo\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Backend.Infrastructure\\UserRepo\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\UserRepo\\UserRepository.cs",
+              "RelativeToolTip": "Backend.Infrastructure\\UserRepo\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:10:23.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthenticationRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Repository\\AuthenticationRepo.cs",
+              "RelativeDocumentMoniker": "Backend.Domain\\Repository\\AuthenticationRepo.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Repository\\AuthenticationRepo.cs",
+              "RelativeToolTip": "Backend.Domain\\Repository\\AuthenticationRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:13:12.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "GetSpecificTrailQuery.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetSpecificTrailDetail\\GetSpecificTrailQuery.cs",
               "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetSpecificTrailDetail\\GetSpecificTrailQuery.cs",
@@ -696,7 +457,139 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 17,
+              "Title": "CommentDtos.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\CommentDtos.cs",
+              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\CommentDtos.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\CommentDtos.cs",
+              "RelativeToolTip": "Backend.Domain\\Entity\\CommentDtos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T14:55:17.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TokenDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\TokenDto.cs",
+              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\TokenDto.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\TokenDto.cs",
+              "RelativeToolTip": "Backend.Domain\\Entity\\TokenDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T10:38:25.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthenticationServices.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Services\\AuthenticationServices.cs",
+              "RelativeDocumentMoniker": "Backend.Infrastructure\\Services\\AuthenticationServices.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Services\\AuthenticationServices.cs",
+              "RelativeToolTip": "Backend.Infrastructure\\Services\\AuthenticationServices.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAgwFAAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:10:20.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\Authentication\\Command\\LoginUser\\LoginUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\Authentication\\Command\\LoginUser\\LoginUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\Authentication\\Command\\LoginUser\\LoginUserCommandHandler.cs",
+              "RelativeToolTip": "Backend.Application\\Authentication\\Command\\LoginUser\\LoginUserCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T08:09:10.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GetTrailCommentQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetTrailComments\\GetTrailCommentQuery.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetTrailComments\\GetTrailCommentQuery.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetTrailComments\\GetTrailCommentQuery.cs",
+              "RelativeToolTip": "Backend.Application\\User\\Query\\GetTrailComments\\GetTrailCommentQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:04:34.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwCkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T15:29:43.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserDtos.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\UserDtos.cs",
+              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\UserDtos.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\UserDtos.cs",
+              "RelativeToolTip": "Backend.Domain\\Entity\\UserDtos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T14:52:56.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\User.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\User.cs",
+              "RelativeToolTip": "Backend.Domain\\Entity\\User.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T10:40:12.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UpdateCommentCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommand.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommand.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommand.cs",
+              "RelativeToolTip": "Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T05:50:33.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAIwHgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:07:33.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GetUserActivityQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetUserActivity\\GetUserActivityQuery.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetUserActivity\\GetUserActivityQuery.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetUserActivity\\GetUserActivityQuery.cs",
+              "RelativeToolTip": "Backend.Application\\User\\Query\\GetUserActivity\\GetUserActivityQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T10:07:51.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "GetSpecificMapDetailQuery.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetSpecificMapDetail\\GetSpecificMapDetailQuery.cs",
               "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetSpecificMapDetail\\GetSpecificMapDetailQuery.cs",
@@ -708,19 +601,247 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "AuthenticationRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Repository\\AuthenticationRepo.cs",
-              "RelativeDocumentMoniker": "Backend.Domain\\Repository\\AuthenticationRepo.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Repository\\AuthenticationRepo.cs",
-              "RelativeToolTip": "Backend.Domain\\Repository\\AuthenticationRepo.cs",
+              "DocumentIndex": 24,
+              "Title": "GetAllTrailQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetAllTrails\\GetAllTrailQuery.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetAllTrails\\GetAllTrailQuery.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetAllTrails\\GetAllTrailQuery.cs",
+              "RelativeToolTip": "Backend.Application\\User\\Query\\GetAllTrails\\GetAllTrailQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T08:22:37.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Comment.cs",
+              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\Comment.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Comment.cs",
+              "RelativeToolTip": "Backend.Domain\\Entity\\Comment.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T09:01:01.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "20250411104154_Adding Comment Date.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Migrations\\20250411104154_Adding Comment Date.cs",
+              "RelativeDocumentMoniker": "Backend.Infrastructure\\Migrations\\20250411104154_Adding Comment Date.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Migrations\\20250411104154_Adding Comment Date.cs",
+              "RelativeToolTip": "Backend.Infrastructure\\Migrations\\20250411104154_Adding Comment Date.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T10:41:54.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Trail.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Trail.cs",
+              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\Trail.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Trail.cs",
+              "RelativeToolTip": "Backend.Domain\\Entity\\Trail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T10:37:43.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20250411103959_Adding Comment Date.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Migrations\\20250411103959_Adding Comment Date.cs",
+              "RelativeDocumentMoniker": "Backend.Infrastructure\\Migrations\\20250411103959_Adding Comment Date.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Migrations\\20250411103959_Adding Comment Date.cs",
+              "RelativeToolTip": "Backend.Infrastructure\\Migrations\\20250411103959_Adding Comment Date.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T10:13:12.507Z"
+              "WhenOpened": "2025-04-11T10:40:00.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CommentDtos.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Dtos\\CommentDtos.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\User\\Dtos\\CommentDtos.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Dtos\\CommentDtos.cs",
+              "RelativeToolTip": "Backend.Application\\User\\Dtos\\CommentDtos.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAowBIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T09:12:36.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UpdateCommentCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommandHandler.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommandHandler.cs",
+              "RelativeToolTip": "Backend.Application\\User\\Commands\\UpdateComment\\UpdateCommentCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T05:50:47.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "GetSpecificTrailQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetSpecificTrailDetail\\GetSpecificTrailQueryHandler.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetSpecificTrailDetail\\GetSpecificTrailQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetSpecificTrailDetail\\GetSpecificTrailQueryHandler.cs",
+              "RelativeToolTip": "Backend.Application\\User\\Query\\GetSpecificTrailDetail\\GetSpecificTrailQueryHandler.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAwBYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:06:31.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AddCommentCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\AddComment\\AddCommentCommandHandler.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\AddComment\\AddCommentCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\AddComment\\AddCommentCommandHandler.cs",
+              "RelativeToolTip": "Backend.Application\\User\\Commands\\AddComment\\AddCommentCommandHandler.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAqwB4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:57:37.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IAdminRepoServices.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Repository\\IAdminRepoServices.cs",
+              "RelativeDocumentMoniker": "Backend.Domain\\Repository\\IAdminRepoServices.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Repository\\IAdminRepoServices.cs",
+              "RelativeToolTip": "Backend.Domain\\Repository\\IAdminRepoServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:43:51.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AddCommentCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\AddComment\\AddCommentCommand.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\AddComment\\AddCommentCommand.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\AddComment\\AddCommentCommand.cs",
+              "RelativeToolTip": "Backend.Application\\User\\Commands\\AddComment\\AddCommentCommand.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAuwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:57:24.262Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 34,
+              "Title": "UpdateCommentDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\UpdateCommentDto.cs",
+              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\UpdateCommentDto.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\UpdateCommentDto.cs",
+              "RelativeToolTip": "Backend.Domain\\Entity\\UpdateCommentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T05:47:07.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DeleteCommentCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommandHandler.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommandHandler.cs",
+              "RelativeToolTip": "Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T04:09:30.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ServiceCollectionExtension.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "RelativeDocumentMoniker": "Backend.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "RelativeToolTip": "Backend.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAwCcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T05:01:23.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\AppContext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Backend.Infrastructure\\AppContext\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\AppContext\\AppDbContext.cs",
+              "RelativeToolTip": "Backend.Infrastructure\\AppContext\\AppDbContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:10:18.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DeleteCommentCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommand.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommand.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommand.cs",
+              "RelativeToolTip": "Backend.Application\\User\\Commands\\DeleteComment\\DeleteCommentCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T04:09:14.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AdminRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\AdminRepo\\AdminRepository.cs",
+              "RelativeDocumentMoniker": "Backend.Infrastructure\\AdminRepo\\AdminRepository.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\AdminRepo\\AdminRepository.cs",
+              "RelativeToolTip": "Backend.Infrastructure\\AdminRepo\\AdminRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T08:10:45.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "GetTraiLCommentQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetTrailComments\\GetTraiLCommentQueryHandler.cs",
+              "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetTrailComments\\GetTraiLCommentQueryHandler.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetTrailComments\\GetTraiLCommentQueryHandler.cs",
+              "RelativeToolTip": "Backend.Application\\User\\Query\\GetTrailComments\\GetTraiLCommentQueryHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowBAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:04:50.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Backend\\Program.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Program.cs",
+              "RelativeToolTip": "Backend\\Program.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAACQAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T10:50:24.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Map.cs",
+              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Map.cs",
+              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\Map.cs",
+              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Map.cs",
+              "RelativeToolTip": "Backend.Domain\\Entity\\Map.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T10:38:42.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
               "Title": "GetAllTrailQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetAllTrails\\GetAllTrailQueryHandler.cs",
               "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetAllTrails\\GetAllTrailQueryHandler.cs",
@@ -732,43 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "GetAllTrailQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetAllTrails\\GetAllTrailQuery.cs",
-              "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetAllTrails\\GetAllTrailQuery.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetAllTrails\\GetAllTrailQuery.cs",
-              "RelativeToolTip": "Backend.Application\\User\\Query\\GetAllTrails\\GetAllTrailQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T08:22:37.932Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "TokenDto.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\TokenDto.cs",
-              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\TokenDto.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\TokenDto.cs",
-              "RelativeToolTip": "Backend.Domain\\Entity\\TokenDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T10:38:25.929Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Trail.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Trail.cs",
-              "RelativeDocumentMoniker": "Backend.Domain\\Entity\\Trail.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Trail.cs",
-              "RelativeToolTip": "Backend.Domain\\Entity\\Trail.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBAAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T10:37:43.689Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "GetSpecificMapDetailQueryHanlder.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetSpecificMapDetail\\GetSpecificMapDetailQueryHanlder.cs",
               "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetSpecificMapDetail\\GetSpecificMapDetailQueryHanlder.cs",
@@ -780,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 45,
               "Title": "GetUserActivityQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Query\\GetUserActivity\\GetUserActivityQueryHandler.cs",
               "RelativeDocumentMoniker": "Backend.Application\\User\\Query\\GetUserActivity\\GetUserActivityQueryHandler.cs",
@@ -792,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 70,
               "Title": "20250407093325_Added Comment Entity With Relation With Trail and User.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Migrations\\20250407093325_Added Comment Entity With Relation With Trail and User.cs",
               "RelativeDocumentMoniker": "Backend.Infrastructure\\Migrations\\20250407093325_Added Comment Entity With Relation With Trail and User.cs",
@@ -804,7 +889,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 46,
               "Title": "20250407092528_Added Comment Entity With Relation With Trail and User.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Migrations\\20250407092528_Added Comment Entity With Relation With Trail and User.cs",
               "RelativeDocumentMoniker": "Backend.Infrastructure\\Migrations\\20250407092528_Added Comment Entity With Relation With Trail and User.cs",
@@ -815,7 +900,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 47,
               "Title": "Suggestion.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Suggestion.cs",
               "RelativeDocumentMoniker": "Backend.Domain\\Entity\\Suggestion.cs",
@@ -827,7 +912,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 48,
               "Title": "UserActivites.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\UserActivites.cs",
               "RelativeDocumentMoniker": "Backend.Domain\\Entity\\UserActivites.cs",
@@ -839,7 +924,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 49,
               "Title": "Review.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Review.cs",
               "RelativeDocumentMoniker": "Backend.Domain\\Entity\\Review.cs",
@@ -851,7 +936,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 50,
               "Title": "MapWithTrail.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\MapWithTrail.cs",
               "RelativeDocumentMoniker": "Backend.Domain\\Entity\\MapWithTrail.cs",
@@ -863,7 +948,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 51,
               "Title": "Feed.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Feed.cs",
               "RelativeDocumentMoniker": "Backend.Domain\\Entity\\Feed.cs",
@@ -875,7 +960,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 52,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Entity\\Roles.cs",
               "RelativeDocumentMoniker": "Backend.Domain\\Entity\\Roles.cs",
@@ -887,7 +972,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 53,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Backend\\Properties\\launchSettings.json",
@@ -899,7 +984,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 69,
               "Title": "20250331041935_fixed RelationShipBetweenTrailandUserActivity.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Migrations\\20250331041935_fixed RelationShipBetweenTrailandUserActivity.cs",
               "RelativeDocumentMoniker": "Backend.Infrastructure\\Migrations\\20250331041935_fixed RelationShipBetweenTrailandUserActivity.cs",
@@ -911,19 +996,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "UserActivitiesDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Dtos\\UserActivitiesDtos.cs",
-              "RelativeDocumentMoniker": "Backend.Application\\User\\Dtos\\UserActivitiesDtos.cs",
-              "ToolTip": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Dtos\\UserActivitiesDtos.cs",
-              "RelativeToolTip": "Backend.Application\\User\\Dtos\\UserActivitiesDtos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T11:17:17.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 55,
               "Title": "CreateTrailCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\Admin\\Command\\CreateTrail\\CreateTrailCommandHandler.cs",
               "RelativeDocumentMoniker": "Backend.Application\\Admin\\Command\\CreateTrail\\CreateTrailCommandHandler.cs",
@@ -935,7 +1008,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 56,
               "Title": "MapDtos.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\Admin\\DTOs\\MapDtos.cs",
               "RelativeDocumentMoniker": "Backend.Application\\Admin\\DTOs\\MapDtos.cs",
@@ -947,7 +1020,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 54,
               "Title": "CreateTrailCommand.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\Admin\\Command\\CreateTrail\\CreateTrailCommand.cs",
               "RelativeDocumentMoniker": "Backend.Application\\Admin\\Command\\CreateTrail\\CreateTrailCommand.cs",
@@ -959,7 +1032,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 68,
               "Title": "20250328063638_RemoveUniqueConstraint.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Migrations\\20250328063638_RemoveUniqueConstraint.cs",
               "RelativeDocumentMoniker": "Backend.Infrastructure\\Migrations\\20250328063638_RemoveUniqueConstraint.cs",
@@ -971,7 +1044,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 58,
               "Title": "DeleteTrailCommand.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\Admin\\Command\\DeleteTrail\\DeleteTrailCommand.cs",
               "RelativeDocumentMoniker": "Backend.Application\\Admin\\Command\\DeleteTrail\\DeleteTrailCommand.cs",
@@ -983,7 +1056,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 57,
               "Title": "DeleteTrailCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\Admin\\Command\\DeleteTrail\\DeleteTrailCommandHandler.cs",
               "RelativeDocumentMoniker": "Backend.Application\\Admin\\Command\\DeleteTrail\\DeleteTrailCommandHandler.cs",
@@ -995,7 +1068,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 59,
               "Title": "20250324105548_Added Relation Between userAcitvity_User_And_Trail.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Migrations\\20250324105548_Added Relation Between userAcitvity_User_And_Trail.cs",
               "RelativeDocumentMoniker": "Backend.Infrastructure\\Migrations\\20250324105548_Added Relation Between userAcitvity_User_And_Trail.cs",
@@ -1007,7 +1080,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 60,
               "Title": "20250316112801_adminPassEmail.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Migrations\\20250316112801_adminPassEmail.cs",
               "RelativeDocumentMoniker": "Backend.Infrastructure\\Migrations\\20250316112801_adminPassEmail.cs",
@@ -1019,7 +1092,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 61,
               "Title": "IAuthenticationServices.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Domain\\Services\\IAuthenticationServices.cs",
               "RelativeDocumentMoniker": "Backend.Domain\\Services\\IAuthenticationServices.cs",
@@ -1031,7 +1104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 66,
               "Title": "TrailDtos.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\Admin\\DTOs\\TrailDtos.cs",
               "RelativeDocumentMoniker": "Backend.Application\\Admin\\DTOs\\TrailDtos.cs",
@@ -1043,7 +1116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 65,
               "Title": "TrialDtos.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\User\\Entity\\TrialDtos.cs",
               "RelativeDocumentMoniker": "Backend.Application\\User\\Entity\\TrialDtos.cs",
@@ -1055,7 +1128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 63,
               "Title": "EditTrailCommand.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\Admin\\Command\\EditTrail\\EditTrailCommand.cs",
               "RelativeDocumentMoniker": "Backend.Application\\Admin\\Command\\EditTrail\\EditTrailCommand.cs",
@@ -1067,7 +1140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 64,
               "Title": "EditTrailDtos.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\Admin\\DTOs\\EditTrailDtos.cs",
               "RelativeDocumentMoniker": "Backend.Application\\Admin\\DTOs\\EditTrailDtos.cs",
@@ -1079,7 +1152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 67,
               "Title": "20250312062437_AddedLocationFieldInTrailEntity.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Infrastructure\\Migrations\\20250312062437_AddedLocationFieldInTrailEntity.cs",
               "RelativeDocumentMoniker": "Backend.Infrastructure\\Migrations\\20250312062437_AddedLocationFieldInTrailEntity.cs",
@@ -1091,7 +1164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 62,
               "Title": "EditTrailCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\Ayush\\Music\\Final-Year-Project\\Backend\\Backend.Application\\Admin\\Command\\EditTrail\\EditTrailCommandHandler.cs",
               "RelativeDocumentMoniker": "Backend.Application\\Admin\\Command\\EditTrail\\EditTrailCommandHandler.cs",

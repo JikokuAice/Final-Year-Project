@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Backend.Domain.Entity;
 
@@ -17,7 +18,9 @@ public class Trail
  public int? MapId;
 public Map? Maps { get; set; }
 
+    [JsonIgnore]
 public UserActivites? UserActivites { get; set; }
+    [JsonIgnore]
 public List<Comments>? Comments { get; set; }
 
 }

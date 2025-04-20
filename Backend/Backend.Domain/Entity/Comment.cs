@@ -16,6 +16,8 @@ namespace Backend.Domain.Entity
 
         public int likes { get; set; } = 0;
 
+     public   DateTime? createdAt { get; set; } = DateTime.Now.Date; 
+
         public int UserId { get; set; }
         public User? User { get; set; }
 
