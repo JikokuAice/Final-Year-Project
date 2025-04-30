@@ -50,7 +50,7 @@ class _TrailCardState extends State<TrailCard> {
                       image: const DecorationImage(
                         fit: BoxFit.cover,
                         image: NetworkImage(
-                            "https://7b79-103-166-101-71.ngrok-free.app/uploads/Home_0.jpg"),
+                            "https://live.staticflickr.com/5468/30554208250_3a81de830c_b.jpg"),
                       ),
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(10)),

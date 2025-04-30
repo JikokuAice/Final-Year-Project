@@ -85,8 +85,9 @@ class _HomeState extends State<Home> {
             unselectedItemColor: role == "Admin"
                 ? const Color(0xFF008080)
                 : const Color.fromARGB(159, 16, 175, 53),
-            backgroundColor:
-                role == "Admin" ? const Color(0xFF008080) : Colors.white,
+            backgroundColor: role == "Admin"
+                ? Color.fromARGB(255, 77, 236, 236)
+                : Colors.white,
             items: [
               BottomNavigationBarItem(
                 icon: IconButton(
@@ -202,7 +203,7 @@ class _HomeState extends State<Home> {
                       const Gap(10),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF008080),
+                          backgroundColor: Color.fromARGB(255, 183, 255, 255),
                         ),
                         onPressed: () {
                           toastification.show(
@@ -265,9 +266,8 @@ class MySearchDelegate extends SearchDelegate {
 
   @override
   Widget buildResults(BuildContext context) {
-    
     return Center(
-       : Text("Search result for \"$query\""),
+      child: Text("Search result for \"$query\""),
     );
   }
 

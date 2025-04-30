@@ -1,4 +1,5 @@
-const localHostUrl = "https://1345-202-51-86-227.ngrok-free.app";
+const localHostUrl =
+    "https://ce13-2400-1a00-bd11-179b-9459-cfbe-17bb-bc82.ngrok-free.app";
 const loginRoute = "/Login";
 const registerRoute = "/Register";
 const getAllTrail = "/api/User/GetAl1Trial";
